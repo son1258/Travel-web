@@ -9,6 +9,9 @@ import DES5 from '../assets/images/des5.webp';
 import DES6 from '../assets/images/des6.webp';
 import DES7 from '../assets/images/des7.webp';
 import DES8 from '../assets/images/des8.webp';
+import DES04 from '../assets/images/des04.png';
+import DES02 from '../assets/images/des02.png';
+import DES03 from '../assets/images/des03.jpg';
 import { useState } from 'react';
 import Logo1 from '../assets/images/only-logo.png';
 import Tele from '../assets/images/teleop.svg';
@@ -36,14 +39,6 @@ function Destination() {
             <div className="fixed top-0 right-0 w-12 h-12 z-[1000] cursor-pointer" onClick={() => navigate('/menu')}>
                 <img src={Menu} alt='logo-menu' />
             </div>
-            <div className="h-[600px]"
-                style={{
-                    backgroundImage: `url(${DesIm})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                }}
-            ></div>
             <div className='flex flex-row py-6 px-8 items-center text-[24px] font-medium shadow'>
                 <p>Miền bạn muốn đến</p>
                 <div className='ml-[420px] flex flex-row items-center gap-10'>
@@ -56,6 +51,12 @@ function Destination() {
             <div className="inline-flex px-16 mt-16">
                 <div className='w-[300px] text-[22px]'>
                     <p className='text-[30px] font-medium'>Tất Cả (1)</p>
+                    <p className='py-2'>Cao Bằng</p>
+                    <div className='w-full h-[1px] bg-black/50'></div>
+                    <p className='py-2'>Lạng Sơn (coming soon)</p>
+                    <div className='w-full h-[1px] bg-black/50'></div>
+                    <p className='py-2'>Bắc Kạn (coming soon)</p>
+                    <div className='w-full h-[1px] bg-black/50'></div>
                     <p className='py-2'>Sapa (coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
                     <p className='py-2'>Ninh Bình (coming soon)</p>
@@ -65,12 +66,6 @@ function Destination() {
                     <p className='py-2'>Tuy Hoà - Quy Nhơn - Quảng Ngãi (coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
                     <p className='py-2'>Huế - Quảng Bình (coming soon)</p>
-                    <div className='w-full h-[1px] bg-black/50'></div>
-                    <p className='py-2'>Nghệ An (coming soon)</p>
-                    <div className='w-full h-[1px] bg-black/50'></div>
-                    <p className='py-2'>Đà Nẵng (coming soon)</p>
-                    <div className='w-full h-[1px] bg-black/50'></div>
-                    <p className='py-2'>Tây Ninh (coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
                     <p className='py-2'>Đông Nam Bộ (coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
@@ -85,10 +80,10 @@ function Destination() {
                     </div>
                 </div>
                 <div className='ml-24 grid grid-cols-2 gap-1'>
-                    <img src={DES1} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES2} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES3} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES4} alt="eximage" className="h-[220px] w-[400px]" />
+                    <img src={DES1} alt="eximage" className="h-[220px] w-[400px] cursor-pointer" onClick={() => navigate('/experience')}/>
+                    <img src={DES02} alt="eximage" className="h-[220px] w-[400px]" />
+                    <img src={DES03} alt="eximage" className="h-[220px] w-[400px]" />
+                    <img src={DES04} alt="eximage" className="h-[220px] w-[400px]" />
                     <img src={DES5} alt="eximage" className="h-[220px] w-[400px]" />
                     <img src={DES6} alt="eximage" className="h-[220px] w-[400px]" />
                     <img src={DES7} alt="eximage" className="h-[220px] w-[400px]" />
@@ -172,7 +167,7 @@ function Destination() {
                 </div>
             )}
             <div className="mt-16 flex flex-col justify-center items-center w-full">
-                <img src={Profile} alt="profile_image" className="w-24 h-24 rounded-full" />
+                <img src={Logo1} alt="profile_image" className="w-44 h-44 rounded-full" />
                 <p className="font-medium text-2xl tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
                 <p className="text-[12px] w-[520px]">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
@@ -183,7 +178,7 @@ function Destination() {
                 </div>
                 <div className="flex flex-col items-center ml-[46px]">
                     <img src={Phone} alt="logo phone" className="w-[40px] h-[40px]" />
-                    <p>+84 032.123.231</p>
+                    <p>(+84) 832.123.231</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <img src={Email} alt="logo email" className="w-[40px] h-[40px]" />
@@ -191,14 +186,14 @@ function Destination() {
                 </div>
             </div>
             <div className="mt-4 flex justify-center items-center">
-                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white">LET’S TALK!</button>
+                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white" onClick={openPopup}>Trò chuyện ngay!</button>
             </div>
             <div className="mt-12 h-[400px] bg-black/85">
                 <div className="inline-flex w-full text-white">
                     <div className="w-1/4 px-[20px] mt-16">
                         <p className="font-medium text-xl leading-4">Đăng kí</p>
                         <p className="text-sm leading-5">Nhận thông tin và khuyến mãi mới nhất</p>
-                        <input className="w-full px-2 py-1 rounded-lg mt-1" placeholder="Nhập vào email của bạn" />
+                        <input className="w-full px-2 py-1 rounded-lg mt-1 text-black" placeholder="Nhập vào email của bạn" />
                         <button className="px-6 py-2 rounded-lg bg-[#F6C8B4]/80 mt-2 font-medium text-white">Submit</button>
                         <p className="mt-8 font-medium">Social</p>
                         <div className="flex justify-between items-center w-[50px] mt-1">

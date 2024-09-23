@@ -22,38 +22,25 @@ import Phone from '../assets/images/telephone-call_3059561.png';
 import Profile from '../assets/images/profile.jpg';
 import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
+import { useState } from 'react';
 
 function AboutUs() {
     const navigate = useNavigate();
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+    // Hàm để mở popup
+    const openPopup = () => {
+        setIsPopupVisible(true);
+    };
+
+    // Hàm để đóng popup
+    const closePopup = () => {
+        setIsPopupVisible(false);
+    };
     return (
         <div>
             <div className="fixed top-0 right-0 w-12 h-12 z-[1000]" onClick={() => navigate('/menu')}>
                 <img src={Menu} alt='logo-menu' />
-            </div>
-            <div className="py-[20px]"
-                style={{
-                    backgroundImage: `url(${Image})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                }}
-            >
-                <div className="flex justify-evenly items-center px-[100px] text-white font-medium text-[20px]">
-                    <p onClick={() => navigate('/destination')} className='cursor-pointer'>ĐIỂM ĐẾN</p>
-                    <p onClick={() => navigate('/experience')} className='cursor-pointer'>TRẢI NGHIỆM</p>
-                    <p onClick={() => navigate('/about')} className='cursor-pointer'>VỀ CHÚNG TÔI</p>
-                    <p>BLOG</p>
-                    <p>GẶP GỠ CHÚNG TÔI</p>
-                    <p>LIÊN HỆ</p>
-                </div>
-                <div className="flex justify-center items-center">
-                    <img src={Logo1} alt="logo" className="w-[300px] h-[300px]" />
-                </div>
-                <p className="text-center uppercase font-medium text-[28px] text-white">Đắm say văn hóa / Khám phá Việt Nam</p>
-                <div className="flex justify-center items-center mt-8">
-                    <input type="text" className="py-2 px-4" placeholder="Nhập email của bạn" />
-                    <p className="px-2 py-2 bg-[#ff751a] font-medium text-white text-[16px]">Go</p>
-                </div>
             </div>
             <div className="flex justify-evenly items-center px-[100px] text-black font-medium text-[16px] py-[30px]">
                 <p>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
@@ -62,7 +49,9 @@ function AboutUs() {
                 <p>CHÚNG TÔI MANG ĐẾN</p>
             </div>
             <div className='inline-flex gap-4'>
-                <img src={OurStore} alt="our_store" className='w-1/2 h-[500px]' />
+                <div className='w-1/2 h-[500px]'>
+                    <img src={OurStore} alt="our_store" className='object-cover'/>
+                </div>
                 <div className='w-1/2 mx-8 text-[13px] mt-12'>
                     <p className='font-medium text-[36px]'>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
                     <p className='italic text-[20px] tracking-[6px] text-[#3399ff]'>VNOMAS, "VIỆT NAM" VÀ "NOMAD"</p>
@@ -71,15 +60,15 @@ function AboutUs() {
                     <p className='w-[90%] mt-1'><span className='italic font-medium'>Logo của VNOMAS:</span> là sự kết hợp hài hòa giữa các yếu tố thiên nhiên và hiện đại, thể hiện sự cân bằng giữa truyền thống và đổi mới. Hình ảnh con người, núi, máy bay và chữ "V" ẩn chứa nhiều ý nghĩa sâu sắc, tượng trưng cho sự kết nối, khát vọng và niềm tự hào dân tộc.</p>
                 </div>
             </div>
-            <div className='inline-flex gap-4'>
+            <div className='inline-flex gap-4 mt-20'>
                 <div className='w-1/2 mx-8 text-[13px] mt-12'>
                     <p className='font-medium text-[36px]'>GIÁ TRỊ CỦA CHÚNG TÔI</p>
                     <ul className='list-disc pl-8 mt-2'>
-                        <li><span className='italic font-medium'>Authenticity:</span>Chúng tôi cam kết mang đến những trải nghiệm du lịch chân thực, giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
-                        <li><span className='italic font-medium'>Passion:</span>Chúng tôi đam mê khám phá và chia sẻ vẻ đẹp của Việt Nam với thế giới.</li>
-                        <li><span className='italic font-medium'>Sustainability: </span>Chúng tôi luôn đặt bền vững lên hàng đầu, tôn trọng môi trường và cộng đồng địa phương.</li>
-                        <li><span className='italic font-medium'>Innovation:</span>Chúng tôi không ngừng sáng tạo và đổi mới để mang đến những trải nghiệm du lịch độc đáo và mới lạ.</li>
-                        <li><span className='italic font-medium'>Customer Satisfaction: </span>Sự hài lòng của khách hàng là ưu tiên hàng đầu của chúng tôi.</li>
+                        <li><span className='italic font-medium'>Tính xác thực : </span>Chúng tôi cam kết mang đến những trải nghiệm du lịch chân thực, giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
+                        <li><span className='italic font-medium'>Tình yêu : </span>Chúng tôi đam mê khám phá và chia sẻ vẻ đẹp của Việt Nam với thế giới.</li>
+                        <li><span className='italic font-medium'>Tính bền vững : </span>Chúng tôi luôn đặt bền vững lên hàng đầu, tôn trọng môi trường và cộng đồng địa phương.</li>
+                        <li><span className='italic font-medium'>Sáng kiến : </span>Chúng tôi không ngừng sáng tạo và đổi mới để mang đến những trải nghiệm du lịch độc đáo và mới lạ.</li>
+                        <li><span className='italic font-medium'>Sự hài lòng của khách hàng : </span>Sự hài lòng của khách hàng là ưu tiên hàng đầu của chúng tôi.</li>
                     </ul>
 
                     <p className='w-[90%] mt-2'><span className='italic font-medium'>TẦM NHÌN:</span> Trở thành một trong những công ty du lịch hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và bền vững, góp phần quảng bá hình ảnh đất nước và con người Việt Nam ra thế giới.</p>
@@ -106,42 +95,10 @@ function AboutUs() {
             <div>
                 <p className='text-center py-12 text-[40px] font-medium'>HÀNH TRÌNH CHÚNG TÔI MANG ĐẾN</p>
                 <div className='flex justify-between py-4 px-8 gap-2'>
-                    <div className='flex flex-col items-center text-[12px]'>
+                    <div className='flex flex-col items-center text-[25px]'>
                         <img src={CT1} alt='logo ct' />
                         <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
-                    </div>
-                    <div className='flex flex-col items-center text-[12px]'>
-                        <img src={CT2} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
-                    </div>
-                    <div className='flex flex-col items-center text-[12px]'>
-                        <img src={CT3} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
-                    </div>
-                    <div className='flex flex-col items-center text-[12px]'>
-                        <img src={CT4} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
-                    </div>
-                </div>
-                <div className='flex justify-between px-24 gap-2'>
-                    <div className='flex flex-col items-center text-[12px]'>
-                        <img src={CT5} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
-                    </div>
-                    <div className='flex flex-col items-center text-[12px]'>
-                        <img src={CT6} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
-                    </div>
-                    <div className='flex flex-col items-center text-[12px]'>
-                        <img src={CT7} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
-                        <p>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
+                        <p className='text-[20px] px-20'>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
                     </div>
                 </div>
             </div>
@@ -176,7 +133,7 @@ function AboutUs() {
                 </div>
             </div>
             <div className="mt-16 flex flex-col justify-center items-center w-full">
-                <img src={Profile} alt="profile_image" className="w-24 h-24 rounded-full" />
+                <img src={Logo1} alt="profile_image" className="w-44 h-44 rounded-full" />
                 <p className="font-medium text-2xl tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
                 <p className="text-[12px] w-[520px]">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
@@ -187,7 +144,7 @@ function AboutUs() {
                 </div>
                 <div className="flex flex-col items-center ml-[46px]">
                     <img src={Phone} alt="logo phone" className="w-[40px] h-[40px]" />
-                    <p>+84 032.123.231</p>
+                    <p>(+84) 832.123.231</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <img src={Email} alt="logo email" className="w-[40px] h-[40px]" />
@@ -195,8 +152,84 @@ function AboutUs() {
                 </div>
             </div>
             <div className="mt-4 flex justify-center items-center">
-                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white">LET’S TALK!</button>
+                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white outline-none" onClick={openPopup}>Trò chuyện ngay!</button>
             </div>
+            {isPopupVisible && (
+                <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
+                    <div className="bg-white rounded-lg shadow-lg w-[800px] p-6 relative">
+                        <button
+                            type="button"
+                            className="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-gray-900"
+                            onClick={closePopup}
+                        >
+                            &times;
+                        </button>
+                        <div className='inline-flex gap-44'>
+                            <img src={Logo1} className='w-24 h-24' />
+                            <h2 className="text-[30px] font-bold mb-4 text-center mt-2">Trò chuyện nào!!</h2>
+                        </div>
+                        <form className='px-8'>
+                            <div className="mb-4 flex flex-row items-center gap-2">
+                                <input
+                                    type="text"
+                                    id="firstname"
+                                    name="firstname"
+                                    placeholder="Nhập họ và tên đệm"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                                <input
+                                    type="text"
+                                    id="lastname"
+                                    name="lastname"
+                                    placeholder="Nhập tên"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Nhập email"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <select className='w-full border-[1.5px] p-3 rounded-lg'>
+                                    <option>Tôi Muốn</option>
+                                    <option>Tôi có một câu hỏi chung</option>
+                                    <option>Tôi muốn có báo giá chi tiết cho một chuyến đi cụ thể</option>
+                                    <option>Đặt lịch tư vấn cho hành trình "Từ đầu"</option>
+                                </select>
+                            </div>
+
+                            <div className="mb-4">
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                                    Nội dung
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Nhập nội dung"
+                                    className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                                    rows="4"
+
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                            >
+                                Gửi Mail
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            )}
             <div className="mt-12 h-[400px] bg-black/85">
                 <div className="inline-flex w-full text-white">
                     <div className="w-1/4 px-[20px] mt-16">

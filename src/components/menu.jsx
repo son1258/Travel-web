@@ -49,15 +49,12 @@ const Menu = () => {
                 </div>
                 <div className="w-1/3 bg-black/90 text-white" >
                     <p onClick={() => navigate(-1)} className="float-right px-4 mt-2 text-bold uppercase text-[20px] text-white cursor-pointer font-bold">X</p>
-                    <div className="mt-10 px-8 text-[24px] font-bold">
-                        <p className="py-2 cursor-pointer hover:text-red-500" onClick={() => navigate('/')}>TRANG CHỦ</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500" onClick={() => navigate('/destination')}>ĐIỂM ĐẾN</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500" onClick={() => navigate('/experience')}>TRẢI NGHIỆM</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500">DÀI</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500">VỀ CHÚNG TÔI</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500">BÀI VIẾT</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500">GẶP GỠ</p>
-                        <p className="py-2 cursor-pointer hover:text-red-500" onClick={openPopup}>TƯƠNG TÁC</p>
+                    <div className="mt-16 px-8 text-[24px] font-bold">
+                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/')}>TRANG CHỦ</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/destination')}>ĐIỂM ĐẾN</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/experience')}>TRẢI NGHIỆM</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/about')}>VỀ CHÚNG TÔI</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={openPopup}>TƯƠNG TÁC</p>
                         <p className="flex flex-row py-2 text-[18px] cursor-pointer hover:text-red-500 mt-2"><img src={CallI} alt='call icon' /> +84 0123.456.789</p>
                         <p className="flex flex-row py-2 text-[18px] cursor-pointer hover:text-red-500"><img src={MailI} alt='mail icon' />  vnomas.contact@gmail.com</p>
                     </div>

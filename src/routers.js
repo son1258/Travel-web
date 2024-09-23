@@ -16,6 +16,14 @@ const router = createBrowserRouter([
                 path:'/',
                 element: <Homepage />
             },
+            {
+                path: '/destination',
+                element: <Destination />
+            },
+            {
+                path: '/about',
+                element: <AboutUs />
+            },
         ]
     },
     {
@@ -23,16 +31,8 @@ const router = createBrowserRouter([
         element: <Menu />
     },
     {
-        path: '/about',
-        element: <AboutUs />
-    },
-    {
         path: '/experience',
         element: <Experience />
-    },
-    {
-        path: '/destination',
-        element: <Destination />
     },
     {
         path: '/experience2',

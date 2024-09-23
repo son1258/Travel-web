@@ -21,8 +21,20 @@ import Phone from '../assets/images/telephone-call_3059561.png';
 import Profile from '../assets/images/profile.jpg';
 import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
+import { useState } from "react";
 
 function Experience() {
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+    // Hàm để mở popup
+    const openPopup = () => {
+        setIsPopupVisible(true);
+    };
+
+    // Hàm để đóng popup
+    const closePopup = () => {
+        setIsPopupVisible(false);
+    };
     const navigate = useNavigate();
     return (
         <div>
@@ -89,7 +101,7 @@ function Experience() {
                 <img src={S3} alt="eximage" className="h-[350px] w-full" />
             </div>
             <div className="mt-16 flex flex-col justify-center items-center w-full">
-                <img src={Profile} alt="profile_image" className="w-24 h-24 rounded-full" />
+                <img src={Logo1} alt="profile_image" className="w-40 h-40 rounded-full" />
                 <p className="font-medium text-2xl tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
                 <p className="text-[12px] w-[520px]">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
@@ -100,7 +112,7 @@ function Experience() {
                 </div>
                 <div className="flex flex-col items-center ml-[46px]">
                     <img src={Phone} alt="logo phone" className="w-[40px] h-[40px]" />
-                    <p>+84 032.123.231</p>
+                    <p>(+84) 832.123.231</p>
                 </div>
                 <div className="flex flex-col items-center">
                     <img src={Email} alt="logo email" className="w-[40px] h-[40px]" />
@@ -108,8 +120,84 @@ function Experience() {
                 </div>
             </div>
             <div className="mt-4 flex justify-center items-center">
-                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white">LET’S TALK!</button>
+                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white" onClick={openPopup}>Trò chuyện ngay!</button>
             </div>
+            {isPopupVisible && (
+                <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
+                    <div className="bg-white rounded-lg shadow-lg w-[800px] p-6 relative">
+                        <button
+                            type="button"
+                            className="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-gray-900"
+                            onClick={closePopup}
+                        >
+                            &times;
+                        </button>
+                        <div className='inline-flex gap-44'>
+                            <img src={Logo1} className='w-24 h-24' />
+                            <h2 className="text-[30px] font-bold mb-4 text-center mt-2">Trò chuyện nào!!</h2>
+                        </div>
+                        <form className='px-8'>
+                            <div className="mb-4 flex flex-row items-center gap-2">
+                                <input
+                                    type="text"
+                                    id="firstname"
+                                    name="firstname"
+                                    placeholder="Nhập họ và tên đệm"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                                <input
+                                    type="text"
+                                    id="lastname"
+                                    name="lastname"
+                                    placeholder="Nhập tên"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Nhập email"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <select className='w-full border-[1.5px] p-3 rounded-lg'>
+                                    <option>Tôi Muốn</option>
+                                    <option>Tôi có một câu hỏi chung</option>
+                                    <option>Tôi muốn có báo giá chi tiết cho một chuyến đi cụ thể</option>
+                                    <option>Đặt lịch tư vấn cho hành trình "Từ đầu"</option>
+                                </select>
+                            </div>
+
+                            <div className="mb-4">
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                                    Nội dung
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Nhập nội dung"
+                                    className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                                    rows="4"
+
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                            >
+                                Gửi Mail
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            )}
             <div className="mt-12 h-[400px] bg-black/85">
                 <div className="inline-flex w-full text-white">
                     <div className="w-1/4 px-[20px] mt-16">
@@ -158,7 +246,7 @@ function Experience() {
                         </div>
                     </div>
                 </div>
-                <div className="h-[1px] bg-white mt-12 mx-[20px]"></div>    
+                <div className="h-[1px] bg-white mt-12 mx-[20px]"></div>
                 <p className="uppercase mt-8 text-[9px] text-white/80 text-center">WEBSITE BY McArnolds  © Copyright 2022 PYGMY ELEPHANT  </p>
             </div>
         </div>

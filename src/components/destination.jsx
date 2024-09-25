@@ -39,16 +39,20 @@ function Destination() {
             <div className="fixed top-0 right-0 w-12 h-12 z-[1000] cursor-pointer" onClick={() => navigate('/menu')}>
                 <img src={Menu} alt='logo-menu' />
             </div>
-            <div className='flex flex-row py-6 px-8 items-center text-[24px] font-medium shadow'>
-                <p>Miền bạn muốn đến</p>
-                <div className='ml-[420px] flex flex-row items-center gap-10'>
-                    <p>Tất cả</p>
-                    <p>Miền Nam</p>
-                    <p>Miền Bắc</p>
-                    <p>Miền Trung</p>
+
+            <div className='flex justify-center items-center w-full mt-2'>
+                <div className='flex flex-row items-center py-6 px-8 text-[24px] font-medium shadow justify-between gap-72 xl:gap-80'>
+                    <p className='text-left lg:text-[28px]'>Miền bạn muốn đến</p>
+                    <div className='flex flex-row gap-10 lg:gap-20'>
+                        <p className='lg:text-[24px]'>Tất cả</p>
+                        <p className='lg:text-[24px]'>Miền Nam</p>
+                        <p className='lg:text-[24px]'>Miền Bắc</p>
+                        <p className='lg:text-[24px]'>Miền Trung</p>
+                    </div>
                 </div>
             </div>
-            <div className="inline-flex px-16 mt-16">
+
+            <div className="flex justify-center mt-16">
                 <div className='w-[300px] text-[22px]'>
                     <p className='text-[30px] font-medium'>Tất Cả (1)</p>
                     <p className='py-2'>Cao Bằng</p>
@@ -71,16 +75,17 @@ function Destination() {
                     <div className='w-full h-[1px] bg-black/50'></div>
                     <p className='py-2'>Miền Tây(coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
-                    <div className='mt-5 w-[300px] relative'>
-                        <img src={DES3} alt='eximage' />
+
+                    <div className='mt-5 w-full relative'>
+                        <img src={DES3} alt='eximage' className="w-full" />
                         <p className='absolute top-12 left-12 font-medium text-[15px] text-white uppercase w-[150px]'>Liên hệ với tư vấn viên của VNomas</p>
                         <p className='absolute top-24 left-12 text-[12px] text-white w-[180px]'>VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách</p>
                         <button type="button" className="absolute left-12 bottom-4 px-5 py-2 rounded-[30px] bg-white font-medium text-[18px]" onClick={openPopup}>Gửi Mail ngay!</button>
-
                     </div>
                 </div>
+
                 <div className='ml-24 grid grid-cols-2 gap-1'>
-                    <img src={DES1} alt="eximage" className="h-[220px] w-[400px] cursor-pointer" onClick={() => navigate('/experience')}/>
+                    <img src={DES1} alt="eximage" className="h-[220px] w-[400px] cursor-pointer" onClick={() => navigate('/experience')} />
                     <img src={DES02} alt="eximage" className="h-[220px] w-[400px]" />
                     <img src={DES03} alt="eximage" className="h-[220px] w-[400px]" />
                     <img src={DES04} alt="eximage" className="h-[220px] w-[400px]" />
@@ -90,6 +95,7 @@ function Destination() {
                     <img src={DES8} alt="eximage" className="h-[220px] w-[400px]" />
                 </div>
             </div>
+
             {isPopupVisible && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
                     <div className="bg-white rounded-lg shadow-lg w-[800px] p-6 relative">

@@ -19,7 +19,6 @@ import Insta from '../assets/icons/FormkitInstagram.svg';
 import Home from '../assets/images/home.webp';
 import Logo1 from '../assets/images/only-logo.png';
 
-
 import { useNavigate } from "react-router";
 
 const Homepage = () => {
@@ -49,7 +48,7 @@ const Homepage = () => {
             <div className="mt-8">
                 <div className="inline-flex grid-rows-2 gap-1">
                     <div className="w-1/2 object-cover items-center justify-center">
-                        <img src={Image6} alt="image" className="w-full" />
+                        <img src={Image6} alt="image" className="w-full object-fit" />
                     </div>
                     <div className="w-1/2 grid-rows-2 inline-flex gap-1">
                         <div className="w-1/2" >
@@ -68,22 +67,24 @@ const Homepage = () => {
                     </div>
                 </div>
                 <div className="mt-8 relative">
-                    <img src={Home} alt="image" className="w-full h-100" />
-                    <p className="leading-5 absolute top-10 left-60 font-medium text-[30px] w-full">
+                    <img src={Home} alt="image" className="w-full h-100 md:h-[900px] object-fit" />
+                    <p className="leading-5 absolute top-10 text-center md:text-[35px] font-medium w-full text-size">
                         Điều gì làm sản phẩm của chúng tôi trở nên khác biệt ?
                     </p>
-                    <p className="leading-5  absolute top-20 left-[265px] font-medium text-[12px] text-center w-[55%]">
-                        Trải nghiệm không chỉ là khám phá thiên nhiên mà còn là hành trình hướng tới lối sống bền vững.
-                        Khi tham gia tour, bạn sẽ nhận được một túi thổ cẩm độc đáo thay thế túi nilon, góp phần bảo vệ môi trường.
-                        Đặc biệt, mỗi khoảnh khắc đáng nhớ sẽ được lưu giữ trong cuốn sổ thiết kế riêng từ công ty, với 5 bức ảnh Polaroid màu sắc ghi lại những khoảnh khắc đáng nhớ.
-                    </p>
-                    <p className="leading-5 absolute top-40 left-[265px] font-medium text-[12px] w-[55%] text-center">
-                        Ngoài ra, khi bạn lựa chọn tour của chúng tôi, bạn không chỉ được chiêm ngưỡng thiên nhiên hùng vĩ mà còn có cơ hội giao lưu, học hỏi và hỗ trợ cộng đồng địa phương.
-                        Mỗi chuyến đi của bạn là một đóng góp vào việc bảo tồn ngôn ngữ, chữ viết, phong tục tập quán của đồng bào các dân tộc.
-                        Hãy để hành trình của bạn trở thành một câu chuyện ý nghĩa và đóng góp vào việc bảo tồn giá trị văn hóa quý báu của cộng đồng địa phương!
-                    </p>
-                    <div className="absolute w-3/4 left-1/2 -translate-x-1/2 top-80">
-                        <img src={Image41} alt='image' />
+                    <div className="absolute top-20 flex flex-col items-center">
+                        <p className="leading-5 font-medium text-[12px] w-[55%]">
+                            Trải nghiệm không chỉ là khám phá thiên nhiên mà còn là hành trình hướng tới lối sống bền vững.
+                            Khi tham gia tour, bạn sẽ nhận được một túi thổ cẩm độc đáo thay thế túi nilon, góp phần bảo vệ môi trường.
+                            Đặc biệt, mỗi khoảnh khắc đáng nhớ sẽ được lưu giữ trong cuốn sổ thiết kế riêng từ công ty, với 5 bức ảnh Polaroid màu sắc ghi lại những khoảnh khắc đáng nhớ.
+                        </p>
+                        <p className="leading-5 mt-4 font-medium text-[12px] w-[55%]">
+                            Ngoài ra, khi bạn lựa chọn tour của chúng tôi, bạn không chỉ được chiêm ngưỡng thiên nhiên hùng vĩ mà còn có cơ hội giao lưu, học hỏi và hỗ trợ cộng đồng địa phương.
+                            Mỗi chuyến đi của bạn là một đóng góp vào việc bảo tồn ngôn ngữ, chữ viết, phong tục tập quán của đồng bào các dân tộc.
+                            Hãy để hành trình của bạn trở thành một câu chuyện ý nghĩa và đóng góp vào việc bảo tồn giá trị văn hóa quý báu của cộng đồng địa phương!
+                        </p>
+                    </div>
+                    <div className="absolute w-[800px] md:w-full  flex justify-center items-center top-80">
+                        <img src={Image41} alt='image' className="object-fit"/>
                     </div>
                 </div>
                 <div className="flex mt-[320px] justify-center items-center">

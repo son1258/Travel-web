@@ -27,36 +27,36 @@ const Menu = () => {
     };
     return (
         <div>
-            <div className="inline-flex gap-1">
+            <div className="inline-flex gap-1 xl:h-[970px]">
                 <div className="w-3/4">
                     <div className="inline-flex items-center uppercase text-[20px] font-bold">
-                        <img src={Logo1} className="w-50 h-28" />
-                        <div className="text-center text-[26px] ">
+                        <img src={Logo1} className="w-50 h-28 xl:w-100 xl:h-56" />
+                        <div className="text-center text-[26px] xl:text-[36px]">
                             <p>Cao Bằng - Bắc Kạn</p>
                             <p>Chạm đến tinh hoa  - Dệt nên ký ức</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-4 gap-1">
-                        <img src={DES1} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES2} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES3} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES4} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES5} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES6} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES7} alt="eximage" className="h-[220px] w-[400px]" />
-                        <img src={DES8} alt="eximage" className="h-[220px] w-[400px]" />
+                        <img src={DES1} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES2} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES3} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES4} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES5} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES6} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES7} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
+                        <img src={DES8} alt="eximage" className="h-[220px] w-[400px] xl:h-[370px]" />
                     </div>
                 </div>
                 <div className="w-1/3 bg-black/90 text-white" >
-                    <p onClick={() => navigate(-1)} className="float-right px-4 mt-2 text-bold uppercase text-[20px] text-white cursor-pointer font-bold">X</p>
-                    <div className="mt-16 px-8 text-[24px] font-bold">
-                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/')}>TRANG CHỦ</p>
-                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/destination')}>ĐIỂM ĐẾN</p>
-                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/experience')}>TRẢI NGHIỆM</p>
-                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={() => navigate('/about')}>VỀ CHÚNG TÔI</p>
-                        <p className="py-4 cursor-pointer hover:text-red-500" onClick={openPopup}>TƯƠNG TÁC</p>
-                        <p className="flex flex-row py-2 text-[18px] cursor-pointer hover:text-red-500 mt-2"><img src={CallI} alt='call icon' /> +84 0123.456.789</p>
-                        <p className="flex flex-row py-2 text-[18px] cursor-pointer hover:text-red-500"><img src={MailI} alt='mail icon' />  vnomas.contact@gmail.com</p>
+                    <p onClick={() => navigate(-1)} className="float-right px-4 mt-2 text-bold uppercase text-[20px] text-white cursor-pointer font-bold xl:text-[40px]">X</p>
+                    <div className="mt-16 px-8 text-[24px] font-bold xl:text-[48px] xl:mt-32">
+                        <p className="py-4 cursor-pointer hover:text-red-500 xl:py-8" onClick={() => navigate('/')}>TRANG CHỦ</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500 xl:py-8" onClick={() => navigate('/destination')}>ĐIỂM ĐẾN</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500 xl:py-8" onClick={() => navigate('/experience')}>TRẢI NGHIỆM</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500 xl:py-8" onClick={() => navigate('/about')}>VỀ CHÚNG TÔI</p>
+                        <p className="py-4 cursor-pointer hover:text-red-500 xl:py-8" onClick={openPopup}>TƯƠNG TÁC</p>
+                        <p className="flex flex-row py-2 text-[18px] xl:text-[22px] cursor-pointer hover:text-red-500 mt-2"><img src={CallI} alt='call icon' /> +84 0123.456.789</p>
+                        <p className="flex flex-row py-2 text-[18px] xl:text-[22px] cursor-pointer hover:text-red-500 xl:mt-4"><img src={MailI} alt='mail icon' />  vnomas.contact@gmail.com</p>
                     </div>
                 </div>
             </div>

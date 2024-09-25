@@ -49,53 +49,51 @@ function Experience() {
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="flex justify-evenly items-center px-[100px] py-[100px] text-white font-medium text-[20px]">
+                <div className="flex justify-evenly items-center px-[100px] py-[100px] text-white font-medium text-[20px] xl:text-[30px]">
                     <p onClick={() => navigate('/destination')} className='cursor-pointer'>ĐIỂM ĐẾN</p>
                     <p onClick={() => navigate('/experience')} className='cursor-pointer'>TRẢI NGHIỆM</p>
                     <p onClick={() => navigate('/about')} className='cursor-pointer'>VỀ CHÚNG TÔI</p>
-                    <p>BLOG</p>
-                    <p>GẶP GỠ CHÚNG TÔI</p>
-                    <p>LIÊN HỆ</p>
+                    <p onClick={openPopup} className='cursor-pointer'>LIÊN HỆ</p>
                 </div>
-                <div className="text-center font-medium text-[28px] text-white mt-2">
+                <div className="text-center font-medium text-[28px] xl:text-[36px] text-white mt-2">
                     <p>Cao Bằng - Bắc Kạn</p>
                     <p>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
                 </div>
                 <div className="flex justify-center items-center mt-8 pb-[100px]">
-                    <button type="button" className="px-6 py-2 rounded-[30px] bg-white font-medium text-[20px] text-[#742B0C]" onClick={() => navigate('/experience2')}>Khám phá trải nghiệm</button>
+                    <button type="button" className="px-6 py-2 rounded-[30px] bg-white font-medium text-[20px] xl:text-[36px] xl:rounded-[40px] text-[#742B0C]" onClick={() => navigate('/experience2')}>Khám phá trải nghiệm</button>
                 </div>
             </div>
-            <div className="mt-12 grid grid-cols-4 gap-2">
-                <img src={EX1} alt="eximage" className="h-[220px]" />
-                <img src={EX4} alt="eximage" className="h-[220px]" />
-                <img src={EX6} alt="eximage" className="h-[220px]" />
-                <img src={EX7} alt="eximage" className="h-[220px]" />
-                <img src={EX8} alt="eximage" className="h-[220px]" />
-                <img src={EX2} alt="eximage" className="h-[220px]" />
-                <img src={EX3} alt="eximage" className="h-[220px]" />
+            <div className="mt-12 grid grid-cols-4 xl:gap-8 gap-2">
+                <img src={EX1} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
+                <img src={EX4} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
+                <img src={EX6} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
+                <img src={EX7} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
+                <img src={EX8} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
+                <img src={EX2} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
+                <img src={EX3} alt="eximage" className="h-[220px] xl:w-[460px] xl:h-[280px]" />
             </div>
             <div className="mt-10 flex flex-col items-center" >
-                <img src={Logo1} alt="logoimg" className="w-40 h-40" />
-                <p className="font-medium text-[40px]">Cao Bằng - Bắc Kạn</p>
-                <p className="w-2/3 mt-2">Chuyến đi như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng. </p>
+                <img src={Logo1} alt="logoimg" className="w-40 h-40 xl:w-[200px] xl:h-[200px]" />
+                <p className="font-medium text-[40px] xl:text-[50px]">Cao Bằng - Bắc Kạn</p>
+                <p className="w-2/3 mt-2 xl:text-[28px]">Chuyến đi như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng. </p>
             </div>
-            <div className="mt-10 inline-flex gap-8 ml-20">
+            <div className="mt-10 inline-flex gap-8 ml-20 xl:px-20">
                 <div className="w-1/2 relative">
-                    <input className="px-2 py-2 w-[500px] border-[1px] border-[black]/50 rounded-lg" placeholder="Tìm tour" />
-                    <img src={SearchIcon} alt="search" className="w-6 h-5 absolute top-[10px] right-4" />
+                    <input className="px-2 py-2 w-[500px] xl:w-[700px] border-[1px] border-[black]/50 rounded-lg" placeholder="Tìm tour" />
+                    <img src={SearchIcon} alt="search" className="w-6 h-5 absolute top-[10px] right-4 md:right-2" />
                 </div>
-                <div className="w-1/2 ml-20 inline-flex gap-16">
-                    <div className="w-1/2 relative">
-                        <input className="px-2 py-2 border-[1px] border-[black]/50 rounded-lg" placeholder="Từ ngày" />
+                <div className="w-1/2 ml-20 xl:w-full xl:ml-32 inline-flex gap-16">
+                    <div className="w-1/2 relative xl:w-full">
+                        <input className="px-2 py-2 border-[1px] border-[black]/50 rounded-lg xl:w-[300px]" placeholder="Từ ngày" />
                         <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-4" />
                     </div>
                     <div className="w-1/2 relative">
-                        <input className="px-2 py-2 border-[1px] border-[black]/50 rounded-lg" placeholder="Đến ngày" />
+                        <input className="px-2 py-2 border-[1px] border-[black]/50 rounded-lg xl:w-[300px]" placeholder="Đến ngày" />
                         <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-4" />
                     </div>
                 </div>
             </div>
-            <div className="mt-12 grid grid-cols-3 gap-2">
+            <div className="mt-12 grid grid-cols-3 gap-2 md:px-32">
                 <img src={S1} alt="eximage" className="h-[350px] w-full" />
                 <img src={S2} alt="eximage" className="h-[350px] w-full" />
                 <img src={S3} alt="eximage" className="h-[350px] w-full" />

@@ -42,7 +42,7 @@ function AboutUs() {
             <div className="fixed top-0 right-0 w-12 h-12 z-[1000]" onClick={() => navigate('/menu')}>
                 <img src={Menu} alt='logo-menu' />
             </div>
-            <div className="flex justify-evenly items-center px-[100px] text-black font-medium text-[16px] py-[30px]">
+            <div className="flex justify-evenly items-center px-[100px] text-black font-medium text-[16px] xl:text-[24px] py-[30px]">
                 <p>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
                 <p>GIÁ TRỊ CHÚNG TÔI</p>
                 <p>LỢI ÍCH DÀNH CHO KHÁCH HÀNG</p>
@@ -50,46 +50,48 @@ function AboutUs() {
             </div>
             <div className='inline-flex gap-4'>
                 <div className='w-1/2 h-[500px]'>
-                    <img src={OurStore} alt="our_store" className='object-cover'/>
+                    <img src={OurStore} alt="our_store" className='object-cover' />
                 </div>
-                <div className='w-1/2 mx-8 text-[13px] mt-12'>
-                    <p className='font-medium text-[36px]'>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
-                    <p className='italic text-[20px] tracking-[6px] text-[#3399ff]'>VNOMAS, "VIỆT NAM" VÀ "NOMAD"</p>
-                    <p className='w-[90%] mt-1'>VNOMAS Travel ra đời với sứ mệnh khám phá và giới thiệu vẻ đẹp tiềm ẩn của Việt Nam đến với du khách khắp nơi. Cái tên VNOMAS là sự kết hợp hài hòa giữa "Việt Nam" và "Nomad" (người du mục), thể hiện tinh thần khám phá, tự do và sự kết nối sâu sắc với văn hóa địa phương.</p>
-                    <p className='w-[90%] mt-1'><span className='italic font-medium'>Slogan "Đắm say văn hóa, khám phá Việt Nam"</span> như một lời mời gọi du khách bước vào một cuốn tiểu thuyết đầy màu sắc. Mỗi trang sách là một trải nghiệm mới lạ, mỗi chương là một câu chuyện về văn hóa, bản sắc và con người Việt Nam. Từ "đắm say" gợi lên hình ảnh một du khách đang thả mình vào một dòng sông văn hóa sâu lắng, nơi họ được hòa mình trọn vẹn vào cuộc sống thường ngày của người dân địa phương. Còn "khám phá Việt Nam" như một tấm bản đồ kho báu, hấp dẫn du khách khám phá những điều kỳ diệu ẩn giấu trong từng ngóc ngách của đất nước</p>
-                    <p className='w-[90%] mt-1'><span className='italic font-medium'>Logo của VNOMAS:</span> là sự kết hợp hài hòa giữa các yếu tố thiên nhiên và hiện đại, thể hiện sự cân bằng giữa truyền thống và đổi mới. Hình ảnh con người, núi, máy bay và chữ "V" ẩn chứa nhiều ý nghĩa sâu sắc, tượng trưng cho sự kết nối, khát vọng và niềm tự hào dân tộc.</p>
+                <div className='w-1/2 mx-8 text-[13px] mt-12 xl:mt-24'>
+                    <p className='font-medium text-[36px] xl:text-[48px]'>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
+                    <p className='italic text-[20px] tracking-[6px] text-[#3399ff] xl:text-[30px] xl:mt-2'>VNOMAS, "VIỆT NAM" VÀ "NOMAD"</p>
+                    <p className='w-[90%] mt-1 xl:text-[16px] xl:mt-3'>VNOMAS Travel ra đời với sứ mệnh khám phá và giới thiệu vẻ đẹp tiềm ẩn của Việt Nam đến với du khách khắp nơi. Cái tên VNOMAS là sự kết hợp hài hòa giữa "Việt Nam" và "Nomad" (người du mục), thể hiện tinh thần khám phá, tự do và sự kết nối sâu sắc với văn hóa địa phương.</p>
+                    <p className='w-[90%] mt-1 xl:text-[16px] xl:mt-3'><span className='italic font-medium'>Slogan "Đắm say văn hóa, khám phá Việt Nam"</span> như một lời mời gọi du khách bước vào một cuốn tiểu thuyết đầy màu sắc. Mỗi trang sách là một trải nghiệm mới lạ, mỗi chương là một câu chuyện về văn hóa, bản sắc và con người Việt Nam. Từ "đắm say" gợi lên hình ảnh một du khách đang thả mình vào một dòng sông văn hóa sâu lắng, nơi họ được hòa mình trọn vẹn vào cuộc sống thường ngày của người dân địa phương. Còn "khám phá Việt Nam" như một tấm bản đồ kho báu, hấp dẫn du khách khám phá những điều kỳ diệu ẩn giấu trong từng ngóc ngách của đất nước</p>
+                    <p className='w-[90%] mt-1 xl:text-[16px] xl:mt-3'><span className='italic font-medium'>Logo của VNOMAS:</span> là sự kết hợp hài hòa giữa các yếu tố thiên nhiên và hiện đại, thể hiện sự cân bằng giữa truyền thống và đổi mới. Hình ảnh con người, núi, máy bay và chữ "V" ẩn chứa nhiều ý nghĩa sâu sắc, tượng trưng cho sự kết nối, khát vọng và niềm tự hào dân tộc.</p>
                 </div>
             </div>
-            <div className='inline-flex gap-4 mt-20'>
-                <div className='w-1/2 mx-8 text-[13px] mt-12'>
-                    <p className='font-medium text-[36px]'>GIÁ TRỊ CỦA CHÚNG TÔI</p>
-                    <ul className='list-disc pl-8 mt-2'>
-                        <li><span className='italic font-medium'>Tính xác thực : </span>Chúng tôi cam kết mang đến những trải nghiệm du lịch chân thực, giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
-                        <li><span className='italic font-medium'>Tình yêu : </span>Chúng tôi đam mê khám phá và chia sẻ vẻ đẹp của Việt Nam với thế giới.</li>
-                        <li><span className='italic font-medium'>Tính bền vững : </span>Chúng tôi luôn đặt bền vững lên hàng đầu, tôn trọng môi trường và cộng đồng địa phương.</li>
-                        <li><span className='italic font-medium'>Sáng kiến : </span>Chúng tôi không ngừng sáng tạo và đổi mới để mang đến những trải nghiệm du lịch độc đáo và mới lạ.</li>
-                        <li><span className='italic font-medium'>Sự hài lòng của khách hàng : </span>Sự hài lòng của khách hàng là ưu tiên hàng đầu của chúng tôi.</li>
+            <div className='inline-flex gap-4 mt-20 xl:mt-[380px]'>
+                <div className='w-1/2 mx-8 text-[13px] mt-[100px] xl:mt-[200px]'>
+                    <p className='font-medium text-[36px] xl:text-[48px]'>GIÁ TRỊ CỦA CHÚNG TÔI</p>
+                    <ul className='list-disc pl-8 mt-2 xl:mt-4 xl:text-[20px] text-[16px]'>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Authenticity : </span>Chúng tôi cam kết mang đến những trải nghiệm du lịch chân thực, giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Passion : </span>Chúng tôi đam mê khám phá và chia sẻ vẻ đẹp của Việt Nam với thế giới.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Sustainability : </span>Chúng tôi luôn đặt bền vững lên hàng đầu, tôn trọng môi trường và cộng đồng địa phương.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Innovation : </span>Chúng tôi không ngừng sáng tạo và đổi mới để mang đến những trải nghiệm du lịch độc đáo và mới lạ.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Customer Satisfaction : </span>Sự hài lòng của khách hàng là ưu tiên hàng đầu của chúng tôi.</li>
                     </ul>
 
-                    <p className='w-[90%] mt-2'><span className='italic font-medium'>TẦM NHÌN:</span> Trở thành một trong những công ty du lịch hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và bền vững, góp phần quảng bá hình ảnh đất nước và con người Việt Nam ra thế giới.</p>
-                    <p className='w-[90%] mt-2'><span className='italic font-medium'>SỨ MỆNH:</span> Kết nối du khách với vẻ đẹp của Việt Nam thông qua những hành trình khám phá ý nghĩa, đồng thời đóng góp vào sự phát triển bền vững của các cộng đồng địa phương.</p>
+                    <p className='w-[90%] mt-2 xl:text-[20px] xl:mt-4 text-[16px]'><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>TẦM NHÌN:</span> Trở thành một trong những công ty du lịch hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và bền vững, góp phần quảng bá hình ảnh đất nước và con người Việt Nam ra thế giới.</p>
+                    <p className='w-[90%] mt-2 xl:text-[20px] xl:mt-4 text-[16px]'><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>SỨ MỆNH:</span> Kết nối du khách với vẻ đẹp của Việt Nam thông qua những hành trình khám phá ý nghĩa, đồng thời đóng góp vào sự phát triển bền vững của các cộng đồng địa phương.</p>
                 </div>
-                <img src={OurValue} alt="our_store" className='w-1/2 h-[500px]' />
+                <div className='w-1/2 h-full'>
+                    <img src={OurValue} alt="our_store" className='object-cover' />
+                </div>
             </div>
             <div className='inline-flex gap-4'>
-                <img src={OurBenefit} alt="our_store" className='w-1/2 h-[500px]' />
-                <div className='w-1/2 mx-8 text-[13px] mt-12'>
-                    <p className='font-medium text-[36px]'>LỢI ÍCH DÀNH CHO KHÁCH HÀNG</p>
-                    <ul className='list-disc pl-8 mt-2'>
-                        <li><span className='italic font-medium'>Trải nghiệm văn hóa độc đáo:</span> Khám phá những lễ hội truyền thống, làng nghề thủ công, và ẩm thực địa phương.giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
-                        <li><span className='italic font-medium'>Hành trình khám phá tự do:</span> Tự thiết kế hành trình theo sở thích cá nhân, hoặc chọn những tour du lịch được thiết kế riêng bởi các chuyên gia của chúng tôi.</li>
-                        <li><span className='italic font-medium'>Hướng dẫn viên chuyên nghiệp: </span> Đội ngũ hướng dẫn viên am hiểu văn hóa, nhiệt tình và giàu kinh nghiệm sẽ đồng hành cùng bạn trong suốt chuyến đi.</li>
-                        <li><span className='italic font-medium'>Dịch vụ chất lượng cao:</span> Chúng tôi cam kết cung cấp dịch vụ tốt nhất với các khách sạn chất lượng, phương tiện di chuyển tiện nghi và các hoạt động giải trí đa dạng.</li>
-                        <li><span className='italic font-medium'>Cộng đồng du lịch: </span> Tham gia cộng đồng du lịch của VNOMAS để chia sẻ kinh nghiệm, kết nối với những người bạn đồng hành.</li>
+                <img src={OurBenefit} alt="our_store" className='w-1/2 h-full' />
+                <div className='w-1/2 mx-8 text-[13px] mt-[100px]  xl:mt-[200px]'>
+                    <p className='font-medium text-[36px] xl:text-[48px]'>LỢI ÍCH DÀNH CHO KHÁCH HÀNG</p>
+                    <ul className='list-disc pl-8 mt-2 text-[16px] xl:text-[20px]'>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Trải nghiệm văn hóa độc đáo:</span> Khám phá những lễ hội truyền thống, làng nghề thủ công, và ẩm thực địa phương.giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Hành trình khám phá tự do:</span> Tự thiết kế hành trình theo sở thích cá nhân, hoặc chọn những tour du lịch được thiết kế riêng bởi các chuyên gia của chúng tôi.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Hướng dẫn viên chuyên nghiệp: </span> Đội ngũ hướng dẫn viên am hiểu văn hóa, nhiệt tình và giàu kinh nghiệm sẽ đồng hành cùng bạn trong suốt chuyến đi.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Dịch vụ chất lượng cao:</span> Chúng tôi cam kết cung cấp dịch vụ tốt nhất với các khách sạn chất lượng, phương tiện di chuyển tiện nghi và các hoạt động giải trí đa dạng.</li>
+                        <li><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>Cộng đồng du lịch: </span> Tham gia cộng đồng du lịch của VNOMAS để chia sẻ kinh nghiệm, kết nối với những người bạn đồng hành.</li>
                     </ul>
 
-                    <p className='w-[90%] mt-2'><span className='italic font-medium'>TẦM NHÌN:</span> Trở thành một trong những công ty du lịch hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và bền vững, góp phần quảng bá hình ảnh đất nước và con người Việt Nam ra thế giới.</p>
-                    <p className='w-[90%] mt-2'><span className='italic font-medium'>SỨ MỆNH:</span> Kết nối du khách với vẻ đẹp của Việt Nam thông qua những hành trình khám phá ý nghĩa, đồng thời đóng góp vào sự phát triển bền vững của các cộng đồng địa phương.</p>
+                    <p className='w-[90%] mt-2 xl:text-[20px] xl:mt-4 text-[16px]'><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>TẦM NHÌN:</span> Trở thành một trong những công ty du lịch hàng đầu Việt Nam, mang đến những trải nghiệm du lịch độc đáo và bền vững, góp phần quảng bá hình ảnh đất nước và con người Việt Nam ra thế giới.</p>
+                    <p className='w-[90%] mt-2 xl:text-[20px] xl:mt-4 text-[16px]'><span className='italic font-medium xl:text-[24px] xl:mt-3 text-[20px]'>SỨ MỆNH:</span> Kết nối du khách với vẻ đẹp của Việt Nam thông qua những hành trình khám phá ý nghĩa, đồng thời đóng góp vào sự phát triển bền vững của các cộng đồng địa phương.</p>
                 </div>
             </div>
             <div>

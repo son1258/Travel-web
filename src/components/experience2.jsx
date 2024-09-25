@@ -1,27 +1,13 @@
 import { useNavigate } from "react-router";
-import ExImage from '../assets/images/ex.jpg';
 import Menu from '../assets/images/menu.svg';
 import Logo1 from '../assets/images/only-logo.png';
-import EX1 from '../assets/images/ex1.jpg';
-import EX2 from '../assets/images/ex2.jpg';
-import EX3 from '../assets/images/ex3.jpg';
-import EX4 from '../assets/images/ex4.jpg';
-import EX5 from '../assets/images/ex5.jpeg';
-import EX6 from '../assets/images/ex6.jpeg';
-import EX7 from '../assets/images/ex7.jpg';
-import EX8 from '../assets/images/ex8.jpeg';
-import SearchIcon from '../assets/icons/search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png';
-import CalendarIcon from '../assets/icons/calendar_month_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png';
-import S1 from '../assets/images/z5844542045162_65465e05905351681f72e0718c859d1f.jpg';
-import S2 from '../assets/images/z5844542045134_778f00731808cf06518fb5e98f073862.jpg';
-import S3 from '../assets/images/z5844542045163_445b28ec9cbd71b612750ead30ee11bd.jpg';
 import Tele from '../assets/images/teleop.svg';
 import Email from '../assets/images/email_3178158.png';
 import Phone from '../assets/images/telephone-call_3059561.png';
-import Profile from '../assets/images/profile.jpg';
 import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
 import Ex2 from '../assets/images/ex2.webp';
+import ExImage from '../assets/images/ex.jpg';
 import vh from '../assets/images/xedap.jpg';
 import price from '../assets/images/price.jpg';
 import tep from '../assets/images/kep.jpg';
@@ -66,26 +52,24 @@ function Experience2() {
             </div>
             <div className="py-[20px]"
                 style={{
-                    backgroundImage: `url(${Ex2})`,
+                    backgroundImage: `url(${ExImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="flex justify-evenly items-center px-[100px] py-[100px] text-white font-medium text-[24px]">
+                <div className="flex justify-evenly items-center px-[100px] py-[100px] text-white font-medium text-[20px] xl:text-[30px]">
                     <p onClick={() => navigate('/destination')} className='cursor-pointer'>ĐIỂM ĐẾN</p>
                     <p onClick={() => navigate('/experience')} className='cursor-pointer'>TRẢI NGHIỆM</p>
                     <p onClick={() => navigate('/about')} className='cursor-pointer'>VỀ CHÚNG TÔI</p>
-                    <p>BLOG</p>
-                    <p>GẶP GỠ CHÚNG TÔI</p>
-                    <p>LIÊN HỆ</p>
+                    <p onClick={openPopup}>LIÊN HỆ</p>
                 </div>
-                <div className="text-center font-medium text-[28px] text-white mt-2">
+                <div className="text-center font-medium text-[28px] xl:text-[36px] text-white mt-2">
                     <p>Cao Bằng - Bắc Kạn</p>
                     <p>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
                 </div>
                 <div className="flex justify-center items-center mt-8 pb-[100px]">
-                    <button type="button" className="px-6 py-2 rounded-[30px] bg-white font-medium text-[20px] text-[#742B0C]" onClick={() => navigate('/experience2')}>Đặt tour ngay!</button>
+                    <button type="button" className="px-6 py-2 rounded-[30px] bg-white font-medium text-[20px] xl:text-[36px] xl:rounded-[40px] text-[#742B0C]" onClick={() => navigate('/experience2')}>Đặt tour ngay!</button>
                 </div>
             </div>
             <div className="mt-12 text-center text-[26px] font-medium">
@@ -133,7 +117,7 @@ function Experience2() {
                 <p className="text-[45px] font-bold">CHÍNH SÁCH TOUR</p>
                 <p className="italic">Điều chỉnh chuyến đi bộ đường dài theo ngân sách và sở thích của bạn</p>
                 <div className="grid grid-cols-3 py-10 px-48">
-                    <div className="hover:text-white hover:bg-[#ff471a] px-8 py-14 border-[1px] mt-2">
+                    <div className="hover:text-white hover:bg-[#ff471a] px-8 py-14 border-[1px] mt-2 xl:py-28">
                         <p className="text-center uppercase font-bold">TRẺ EM 2-5 TUỔI</p>
                         <ul className="list-disc uppercase px-2 mt-10 italic text-[12px]">
                             <li>Mua 90% vé máy bay người lớn. Gia đình tự lo cho bé ăn ngủ và tự trả phí tham quan (nếu có)</li>
@@ -141,14 +125,14 @@ function Experience2() {
                         </ul>
                         <p className="mt-12 font-bold">TỪ 3.200.000 VND</p>
                     </div>
-                    <div className="hover:text-white hover:bg-[#ff471a] px-8 py-14 border-[1px] mt-2">
+                    <div className="hover:text-white hover:bg-[#ff471a] px-8 py-14 border-[1px] mt-2 xl:py-28">
                         <p className="text-center uppercase font-bold">Trẻ em 6 - 11 tuổi:</p>
                         <ul className="list-disc uppercase px-2 mt-10 italic text-[12px]">
                             <li>Vé máy bay, ăn uống và tham quan theo chương trình, ngủ chung giường với phụ huynh.</li>
                         </ul>
                         <p className="mt-12 font-bold">TỪ 4.800.000 VNĐ</p>
                     </div>
-                    <div className="hover:text-white hover:bg-[#ff471a] px-8 py-14 border-[1px] mt-2">
+                    <div className="hover:text-white hover:bg-[#ff471a] px-8 py-14 border-[1px] mt-2 xl:py-28">
                         <p className="text-center uppercase font-bold ">Người lớn:</p>
                         <ul className="list-disc uppercase px-2 mt-10 italic text-[12px]">
                             <li>Dịch vụ tiêu chuẩn.</li>
@@ -179,7 +163,7 @@ function Experience2() {
                     </div>
                 </div>
             </div>
-            <img src={Img2} className="mx-auto" alt='img2' />
+            <img src={Img2} className="mx-auto mt-2" alt='img2' />
             <div className="py-8">
                 <p className="text-center text-[45px] font-bold">CÁC HOẠT ĐỘNG</p>
                 <div className="grid grid-cols-5 gap-2 text-center mt-5 px-8">

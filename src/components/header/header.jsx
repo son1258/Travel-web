@@ -3,6 +3,7 @@ import Logo1 from '../../assets/images/only-logo.png';
 import ImgHeader from '../../assets/images/biaabus.png';
 import { useState } from 'react';
 
+
 function Header() {
     const navigate = useNavigate();
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -18,11 +19,10 @@ function Header() {
     };
     return (
         <div 
-            className="py-[28px] bg-black/40 bg-cover bg-center relative h-full xl:py-60 header lg:py-40"
-            style={{ backgroundImage: `url(${ImgHeader})` }}>
-            
+            className="sm:py-[28px] bg-black/40 bg-cover bg-center relative h-full w-auto object-cover sm:h-full xl:py-60 header lg:py-40"
+            style={{ backgroundImage: `url(${ImgHeader})`, backgroundSize: 'cover',  backgroundPosition: 'center'  }}>
             {/* Navigation bar */}
-            <div className="lg:absolute lg:top-8 lg:w-full  flex justify-evenly items-center lg:px-[50px] text-white font-medium text-[16px] lg:text-[30px]">
+            <div className="lg:absolute lg:top-8 lg:w-full py-2 flex justify-evenly items-center lg:px-[50px] text-white px-4 font-medium text-[12px] sm:text-[16px] lg:text-[30px]">
                 <p onClick={() => navigate('/destination')} className="cursor-pointer">ĐIỂM ĐẾN</p>
                 <p onClick={() => navigate('/experience')} className="cursor-pointer">TRẢI NGHIỆM</p>
                 <p onClick={() => navigate('/about')} className="cursor-pointer">VỀ CHÚNG TÔI</p>
@@ -105,23 +105,23 @@ function Header() {
                 </div>
             )}
             {/* Logo section */}
-            <div className="absolute left-1/2 lg:top-[280px] xl:top-[350px] stop-[170px] transform -translate-x-1/2">
-                <img src={Logo1} alt="logo" className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]" />
+            <div className="absolute left-1/2 lg:top-[280px] xl:top-[350px] sm:top-[190px] top-[98px] transform -translate-x-1/2">
+                <img src={Logo1} alt="logo" className="w-[90px] h-[90px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px]" />
             </div>
             
             {/* Header text */}
-            <p className="mt-64 text-center uppercase font-medium text-[22px] md:text-[28px] text-white">
+            <p className="mt-32 sm:mt-64 text-center uppercase font-medium sm:text-[22px] lg:text-[28px] text-white">
                 Đắm say văn hóa / Khám phá Việt Nam
             </p>
 
             {/* Email input section */}
-            <div className="flex justify-center items-center mt-8 space-x-2">
+            <div className="flex justify-center items-center sm:mt-8 mt-6 space-x-2 py-4">
                 <input 
                     type="text" 
-                    className="py-2 px-4 text-black w-[220px] md:w-[300px] rounded" 
+                    className="sm:py-2 sm:px-4 py-1 px-2 text-black w-[150px] sm:w-[220px] lg:w-[300px] rounded sm:text-[16px] text-[10px]" 
                     placeholder="Nhập email của bạn" 
                 />
-                <p className="px-4 py-2 bg-[#ff751a] font-medium text-white text-[14px] md:text-[16px] cursor-pointer">
+                <p className="sm:px-4 sm:py-2 py-1 px-2 bg-[#ff751a] font-medium text-white text-[10px] sm:text-[14px] lg:text-[16px] cursor-pointer">
                     Go
                 </p>
             </div>

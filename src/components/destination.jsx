@@ -36,28 +36,28 @@ function Destination() {
     };
     return (
         <div>
-            <div className="fixed top-0 right-0 w-12 h-12 z-[1000] cursor-pointer" onClick={() => navigate('/menu')}>
+            <div className="hidden sm:block fixed top-0 right-0 w-[40px] h-[40px] sm:w-12 sm:h-12 z-[1000] cursor-pointer" onClick={() => navigate('/menu')}>
                 <img src={Menu} alt='logo-menu' />
             </div>
 
             <div className='flex justify-center items-center w-full mt-2'>
-                <div className='flex flex-row items-center py-6 px-8 text-[24px] font-medium shadow justify-between gap-72 xl:gap-80'>
-                    <p className='text-left lg:text-[28px]'>Miền bạn muốn đến</p>
-                    <div className='flex flex-row gap-10 lg:gap-20'>
-                        <p className='lg:text-[24px]'>Tất cả</p>
-                        <p className='lg:text-[24px]'>Miền Nam</p>
-                        <p className='lg:text-[24px]'>Miền Bắc</p>
-                        <p className='lg:text-[24px]'>Miền Trung</p>
+                <div className='flex flex-row items-center sm:py-6 sm:px-8 px-4 py-2 sm:text-[24px] font-medium shadow justify-between sm:gap-72 xl:gap-80 gap-20'>
+                    <p className='text-left lg:text-[28px] sm:text-[20px] text-[12px]'>Miền bạn muốn đến</p>
+                    <div className='flex flex-row sm:gap-10 lg:gap-20 lg:text-[24px] sm:text-[20px] text-[12px] gap-4'>
+                        <p className=''>Tất cả</p>
+                        <p className=''>Miền Nam</p>
+                        <p className=''>Miền Bắc</p>
+                        <p className=''>Miền Trung</p>
                     </div>
                 </div>
             </div>
 
-            <div className="flex justify-center mt-16">
-                <div className='w-[300px] text-[22px]'>
-                    <p className='text-[30px] font-medium'>Tất Cả (1)</p>
+            <div className="flex justify-center sm:mt-16 mt-8 px-4">
+                <div className='sm:w-[300px] sm:text-[22px] w-[250px] text-[14px]'>
+                    <p className='sm:text-[30px] text-[18px] font-medium'>Tất Cả (1)</p>
                     <p className='py-2'>Cao Bằng</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
-                    <p className='py-2'>Lạng Sơn (coming soon)</p>
+                    <p className='py-2 w-full'>Lạng Sơn (coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
                     <p className='py-2'>Bắc Kạn (coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
@@ -76,23 +76,23 @@ function Destination() {
                     <p className='py-2'>Miền Tây(coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
 
-                    <div className='mt-5 w-full relative'>
+                    <div className='sm:mt-5 mt-4 w-full relative'>
                         <img src={DES3} alt='eximage' className="w-full" />
-                        <p className='absolute top-12 left-12 font-medium text-[15px] text-white uppercase w-[150px]'>Liên hệ với tư vấn viên của VNomas</p>
-                        <p className='absolute top-24 left-12 text-[12px] text-white w-[180px]'>VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách</p>
-                        <button type="button" className="absolute left-12 bottom-4 px-5 py-2 rounded-[30px] bg-white font-medium text-[18px]" onClick={openPopup}>Gửi Mail ngay!</button>
+                        <p className='absolute sm:top-12 top-7 text-[10px] left-4 sm:left-12 font-medium sm:text-[15px] text-white uppercase sm:w-[150px]'>Liên hệ với tư vấn viên của VNomas</p>
+                        <p className='absolute sm:top-24 top-14 text-[8px] left-4 sm:left-12 sm:text-[12px] text-white sm:w-[180px]'>VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách</p>
+                        <button type="button" className="absolute sm:left-12 left-4 bottom-3 text-[10px] rounded-[20px] px-4 py-1 sm:bottom-4 sm:px-5 sm:py-2 sm:rounded-[30px] bg-white font-medium sm:text-[18px]" onClick={openPopup}>Gửi Mail ngay!</button>
                     </div>
                 </div>
 
-                <div className='ml-24 grid grid-cols-2 gap-1'>
-                    <img src={DES1} alt="eximage" className="h-[220px] w-[400px] cursor-pointer" onClick={() => navigate('/experience')} />
-                    <img src={DES02} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES03} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES04} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES5} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES6} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES7} alt="eximage" className="h-[220px] w-[400px]" />
-                    <img src={DES8} alt="eximage" className="h-[220px] w-[400px]" />
+                <div className='ml-2 sm:ml-24 grid grid-cols-2 gap-1 mt-9'>
+                    <img src={DES1} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] cursor-pointer" onClick={() => navigate('/experience')} />
+                    <img src={DES02} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
+                    <img src={DES03} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
+                    <img src={DES04} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
+                    <img src={DES5} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
+                    <img src={DES6} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
+                    <img src={DES7} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
+                    <img src={DES8} alt="eximage" className="sm:h-[220px] sm:w-[400px] w-[200px] h-[150px] " />
                 </div>
             </div>
 
@@ -172,46 +172,47 @@ function Destination() {
                     </div>
                 </div>
             )}
-            <div className="mt-16 flex flex-col justify-center items-center w-full">
-                <img src={Logo1} alt="profile_image" className="w-44 h-44 rounded-full" />
-                <p className="font-medium text-2xl tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
-                <p className="text-[12px] w-[520px]">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
+
+            <div className="mt-32 flex flex-col justify-center items-center w-full">
+                <img src={Logo1} alt="profile_image" className="w-40 h-40 rounded-full" />
+                <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
+                <p className="sm:text-[12px] sm:w-[520px] text-[9px] px-8 sm:px-2">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
-            <div className="mt-8 px-[220px] flex justify-evenly">
-                <div className="flex flex-col items-center">
-                    <img src={Tele} alt="logo contact" className="w-[40px] h-[40px]" />
-                    <a href="https://www.facebook.com/profile.php?id=61564523907773" target="_blank">Chăm sóc khách hàng</a>
+            <div className="mt-8 sm:px-[220px] px-[20px] flex justify-evenly">
+                <div className="flex flex-col items-center sm:text-[16px] text-[10px]">
+                    <img src={Tele} alt="logo contact" className="sm:w-[40px] w-[20px] sm:h-[40px] h-[20px]" />
+                    <a href="https://www.facebook.com/profile.php?id=61564523907773" target="_blank" className="">Chăm sóc khách hàng</a>
                 </div>
-                <div className="flex flex-col items-center ml-[46px]">
-                    <img src={Phone} alt="logo phone" className="w-[40px] h-[40px]" />
+                <div className="flex flex-col items-center sm:ml-[10px] sm:text-[16px] text-[10px]">
+                    <img src={Phone} alt="logo phone" className="sm:w-[40px]  w-[20px] sm:h-[40px] h-[20px]" />
                     <p>(+84) 832.123.231</p>
                 </div>
-                <div className="flex flex-col items-center">
-                    <img src={Email} alt="logo email" className="w-[40px] h-[40px]" />
+                <div className="flex flex-col items-center sm:text-[16px] text-[10px]">
+                    <img src={Email} alt="logo email" className="sm:w-[40px]  w-[20px] sm:h-[40px] h-[20px]" />
                     <p>vnomas.contact@gmail.com</p>
                 </div>
             </div>
             <div className="mt-4 flex justify-center items-center">
-                <button className="px-8 py-2 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white" onClick={openPopup}>Trò chuyện ngay!</button>
+                <button className="sm:px-8 py-2 px-6 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white" onClick={openPopup}>Trò chuyện ngay!</button>
             </div>
-            <div className="mt-12 h-[400px] bg-black/85">
+            <div className="mt-12 sm:h-[430px] bg-black/85">
                 <div className="inline-flex w-full text-white">
-                    <div className="w-1/4 px-[20px] mt-16">
-                        <p className="font-medium text-xl leading-4">Đăng kí</p>
-                        <p className="text-sm leading-5">Nhận thông tin và khuyến mãi mới nhất</p>
-                        <input className="w-full px-2 py-1 rounded-lg mt-1 text-black" placeholder="Nhập vào email của bạn" />
-                        <button className="px-6 py-2 rounded-lg bg-[#F6C8B4]/80 mt-2 font-medium text-white">Submit</button>
-                        <p className="mt-8 font-medium">Social</p>
+                    <div className="w-1/4 sm:px-[20px] px-2 sm:mt-16 mt-8">
+                        <p className="font-medium sm:text-xl text-[12px] leading-4">Đăng kí</p>
+                        <p className="sm:text-sm text-[10px] leading-5">Nhận thông tin và khuyến mãi mới nhất</p>
+                        <input className="w-full text-black sm:px-2 py-1 px-1 sm:text-[16px] text-[10px] sm:rounded-lg rounded-[4px] mt-1" placeholder="Nhập vào email của bạn" />
+                        <button className="sm:px-6 sm:py-2 px-2 py-1 sm:rounded-lg rounded-[4px] sm:text-[16px] text-[10px] bg-[#F6C8B4]/80 mt-2 font-medium text-white">Submit</button>
+                        <p className="sm:mt-8 mt-2 font-medium">Social</p>
                         <div className="flex justify-between items-center w-[50px] mt-1">
                             <a href="https://www.facebook.com/profile.php?id=61564523907773" target="_blank"><img src={FbIcon} alt="social_logo" className="w-6 h-6" /></a>
                             <a href="https://www.instagram.com/vnomas.travel/?hl=en" target="_blank"><img src={Insta} alt="social_logo" className="w-6 h-6" /></a>
                         </div>
                     </div>
-                    <div className="w-3/4 px-[40px]">
-                        <div className="mt-16 flex justify-between">
+                    <div className="w-3/4 sm:px-[40px] px-1">
+                        <div className="sm:mt-16 mt-8 flex justify-between">
                             <div>
-                                <p className="font-medium text-xl leading-4">Thông tin</p>
-                                <ul className="mt-4 text-sm text-white/40 list-disc pl-5">
+                                <p className="font-medium sm:text-xl text-[12px] leading-4">Thông tin</p>
+                                <ul className="sm:mt-4 mt-2 text-[8px] sm:text-sm text-white/40 list-disc pl-5">
                                     <li>Về chúng tôi</li>
                                     <li>Liên hệ ngay với chúng tôi</li>
                                     <li>Online Enquiry</li>
@@ -220,30 +221,30 @@ function Destination() {
                                 </ul>
                             </div>
                             <div>
-                                <p className="font-medium text-xl leading-4">Trải nghiệm</p>
-                                <ul className="mt-4 text-sm text-white/40 list-disc pl-5 w-[250px]">
+                                <p className="font-medium sm:text-xl text-[12px] leading-4">Trải nghiệm</p>
+                                <ul className="sm:mt-4 mt-2 text-[8px] sm:text-sm text-white/40 list-disc pl-5 sm:w-[250px] w-[80px]">
                                     <li>Cao Bằng - Bắc Kạn | HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</li>
                                 </ul>
                             </div>
                             <div>
-                                <p className="font-medium text-xl leading-4">Điểm đến</p>
-                                <ul className="mt-4 text-sm text-white/40 list-disc pl-5">
+                                <p className="font-medium sm:text-xl text-[12px] leading-4">Điểm đến</p>
+                                <ul className="sm:mt-4 mt-2 text-[8px] sm:text-sm text-white/40 list-disc pl-5">
                                     <li>Bắc</li>
                                     <li>Trung</li>
                                     <li>Nam</li>
                                 </ul>
                             </div>
                             <div>
-                                <p className="font-medium text-xl leading-4">Blog</p>
-                                <ul className="mt-4 text-sm text-white/40 list-disc pl-5">
+                                <p className="font-medium sm:text-xl text-[12px] leading-4">Blog</p>
+                                <ul className="sm:mt-4 mt-2 text-[8px] sm:text-sm text-white/40 list-disc pl-5">
                                     <li>Khám phá ngay</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="h-[1px] bg-white mt-12 mx-[20px]"></div>
-                <p className="uppercase mt-8 text-[9px] text-white/80 text-center">WEBSITE BY McArnolds  © Copyright 2022 PYGMY ELEPHANT  </p>
+                <div className="h-[1px] bg-white sm:mt-12 mt-8 mx-[20px]"></div>
+                <p className="uppercase py-8 text-[9px] text-white/80 text-center">WEBSITE BY McArnolds  © Copyright 2022 PYGMY ELEPHANT  </p>
             </div>
         </div>
     )

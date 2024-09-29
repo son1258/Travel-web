@@ -1,0 +1,103 @@
+@media (max-width: 480px){
+    .res-des{
+        margin-top: 120px;
+    }
+    .res-dis{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .res-text{
+        font-size: 16px;
+    }
+    .res-text-bt{
+        font-size: 14px;
+    }
+    .res-pb{
+        padding-bottom: 30px;
+    }
+    .res-des-mt{
+        margin-top: 20px;
+    }
+    .res-logo{
+        margin-top: 80px;
+    }
+    .res-text-three{
+        font-size: 10px;
+    }
+    .res-nav{
+        font-size: 10px;
+        padding: 30px 10px;
+    }
+    .res-text-one{
+        font-size: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .res-title{
+        font-size: 20px;
+    }
+    .res-p{
+        font-size: 10px;
+        width: 90%;
+        padding: 0 5px;
+    }
+    .res-i{
+        padding: 0 5px;
+    }
+    .res-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        padding: 0 5px;
+    }
+    .res-item{
+        padding: 10px 5px;
+    }
+    .res-item-note{
+        padding: 10px 5px;
+    }
+    .res-item-t{
+        font-size: 10px;
+    }
+    .res-item-l{
+        font-size: 8px;
+    }
+    .res-price{
+        font-size: 12px;
+    }
+    .res-item:hover{
+        background-color: #ff471a;
+        color: white;
+    }
+    .res-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+    }
+    .res-bt{
+        padding: 2px 11px;
+        width: 79px;
+    }
+    .res-t-t{
+        font-size: 12px;
+    }
+    .res-w{
+        max-width: 99%;
+    }
+    .res-il{
+        max-width: 80%;
+        font-size: 8px;
+        padding: 0 0;
+    }
+    .res-month{
+        display: grid;
+        grid-template-columns: repeat(4,0.25fr);
+    }
+    .res-logo{
+        margin-top: 30px;
+    }
+    .res-text-three{
+        font-size: 8px;
+    }
+}

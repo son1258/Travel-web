@@ -1,0 +1,37 @@
+@media (max-width: 480px){
+    .res-text{
+        font-size: 12px;
+    }
+    .res-text-one{
+        font-size: 6px;
+    }
+    .res-text-two{
+        display: none;
+    }
+    .res-img {
+        width: 250px;
+        height: 200px;
+        position: absolute; /* Make sure it's positioned relative to the parent */
+        top: 96%; /* Moves the top of the element 50% down */
+        left: 50%; /* Moves the left of the element 50% to the right */
+        transform: translate(-50%, -50%); /* Centers the element perfectly */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .res-des{
+        margin-top: 120px;
+    }
+    .res-text-des{
+        font-size: 14px;
+    }
+    .res-des-mt{
+        margin-top: 20px;
+    }
+    .res-logo{
+        margin-top: 80px;
+    }
+    .res-text-three{
+        font-size: 8px;
+    }
+}

@@ -60,7 +60,7 @@ function AboutUs() {
                     <p className='w-[90%] mt-1 xl:text-[16px] xl:mt-3'><span className='italic font-medium'>Logo của VNOMAS:</span> là sự kết hợp hài hòa giữa các yếu tố thiên nhiên và hiện đại, thể hiện sự cân bằng giữa truyền thống và đổi mới. Hình ảnh con người, núi, máy bay và chữ "V" ẩn chứa nhiều ý nghĩa sâu sắc, tượng trưng cho sự kết nối, khát vọng và niềm tự hào dân tộc.</p>
                 </div>
             </div>
-            <div className='grid grid-cols-2 sm:gap-3 gap-2 mt-2 sm:mt-4 xl:mt-[220px]'>
+            <div className='grid grid-cols-2 sm:gap-3 gap-2 mt-2 sm:mt-[180px] xl:mt-[200px]'>
                 <div className='w-full sm:mx-8 mx-2 sm:text-[12px] text-[8px] sm:mt-[100px] mt-2 xl:mt-[200px]'>
                     <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px]'>GIÁ TRỊ CỦA CHÚNG TÔI</p>
                     <ul className='list-disc pl-8 mt-2 xl:mt-4 xl:text-[20px] sm:text-[12px] text-[8px] px-4'>

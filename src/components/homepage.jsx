@@ -18,6 +18,7 @@ import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
 import Home from '../assets/images/home.webp';
 import Logo1 from '../assets/images/only-logo.png';
+import './homepage.css';
 
 import { useNavigate } from "react-router";
 
@@ -66,7 +67,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 relative">
+                {/* <div className="mt-8 relative">
                     <img src={Home} alt="image" className="w-full h-50 lg:h-100 lg:h-[900px] object-fit bg-cover" />
                     <p className="leading-5 absolute lg:top-10 top-4 text-center text-[16px] lg:text-[35px] sm:text-[30px] font-medium w-full text-size">
                         Điều gì làm sản phẩm của chúng tôi trở nên khác biệt ?
@@ -84,15 +85,37 @@ const Homepage = () => {
                         </p>
                     </div>
                     <div className="absolute w-[350px] left-[54px] sm:w-[700px] sm:left-36 sm:top-[280px] lg:w-[800px] lg:w-full top-60 lg:left-80 lg:top-80">
-                        <img src={Image41} alt='image' className="object-fit flex justify-center items-center"/>
+                        <img src={Image41} alt='image' className="object-fit flex justify-center items-center" />
+                    </div>
+                </div> */}
+                <div className="mt-8 relative">
+                    <img src={Home} alt="image" className="w-full h-50 lg:h-100 lg:h-[900px] object-fit bg-cover" />
+                    <p className="res-text leading-5 absolute lg:top-10 top-4 text-center text-[16px] lg:text-[35px] sm:text-[30px] font-medium w-full text-size">
+                        Điều gì làm sản phẩm của chúng tôi trở nên khác biệt ?
+                    </p>
+                    <div className="absolute top-10 mt-2 lg:top-20 flex flex-col items-center">
+                        <p className="res-text-one leading-5 font-medium text-[10px] sm:text-[12px] lg:text-[12px] lg:w-[55%] sm:w-[55%] w-[80%]">
+                            Trải nghiệm không chỉ là khám phá thiên nhiên mà còn là hành trình hướng tới lối sống bền vững.
+                            Khi tham gia tour, bạn sẽ nhận được một túi thổ cẩm độc đáo thay thế túi nilon, góp phần bảo vệ môi trường.
+                            Đặc biệt, mỗi khoảnh khắc đáng nhớ sẽ được lưu giữ trong cuốn sổ thiết kế riêng từ công ty, với 5 bức ảnh Polaroid màu sắc ghi lại những khoảnh khắc đáng nhớ.
+                        </p>
+                        <p className="res-text-two leading-5 mt-4 font-medium text-[10px] sm:text-[12px] lg:text-[12px] lg:w-[55%] sm:w-[55%] w-[80%]">
+                            Ngoài ra, khi bạn lựa chọn tour của chúng tôi, bạn không chỉ được chiêm ngưỡng thiên nhiên hùng vĩ mà còn có cơ hội giao lưu, học hỏi và hỗ trợ cộng đồng địa phương.
+                            Mỗi chuyến đi của bạn là một đóng góp vào việc bảo tồn ngôn ngữ, chữ viết, phong tục tập quán của đồng bào các dân tộc.
+                            Hãy để hành trình của bạn trở thành một câu chuyện ý nghĩa và đóng góp vào việc bảo tồn giá trị văn hóa quý báu của cộng đồng địa phương!
+                        </p>
+                    </div>
+                    <div className="absolute res-img inset-0 flex justify-center items-center sm:top-[600px] top-[450px]">
+                        <img src={Image41} alt="image" className="object-contain w-[400px] sm:w-[800px] lg:w-[900px]" />
                     </div>
                 </div>
-                <div className="flex mt-[250px] lg:mt-[320px] sm:mt-[300px] justify-center items-center">
+
+                <div className="res-des flex mt-[250px] lg:mt-[320px] sm:mt-[300px] justify-center items-center">
                     <div className="w-1/2">
                         <img src={Image12} alt="image" />
                     </div>
                     <div className="w-1/2 px-2">
-                        <p className="font-medium text-[20px] sm:text-[40px] lg:text-[50px] leading-4">Điểm đến của chúng tôi</p>
+                        <p className="res-text-des font-medium text-[20px] sm:text-[40px] lg:text-[50px] leading-4">Điểm đến của chúng tôi</p>
                         <p className="lg:text-[25px] sm:text-[23px] text-[12px] leading-5 lg:mt-8 sm:mt-7 mt-2">Khám phá Việt Nam</p>
                         <p className="lg:text-[25px] sm:text-[23px] text-[12px] leading-5 lg:mt-6 sm:mt-5 mt-2">“Đắm say văn hóa, khám phá Việt Nam” - VNomas</p>
                         <div className="flex mt-5 gap-8 lg:text-[20px] sm:text-[16px] text-[12px]">
@@ -100,7 +123,7 @@ const Homepage = () => {
                             <p><span className="font-medium text-black]">Trung</span> <span className="text-[#742B0C]">(29)</span></p>
                             <p><span className="font-medium text-black]">Nam</span> <span className="text-[#742B0C]">(29)</span></p>
                         </div>
-                        <button className="sm:px-6 sm:py-3 px-4 py-1 rounded-[50px] bg-[#742B0C]/50 mt-10 font-medium text-white sm:text-[20px] text-[16px]">Khám phá ngay</button>
+                        <button className="res-des-mt sm:px-6 sm:py-3 px-4 py-1 rounded-[50px] bg-[#742B0C]/50 mt-10 font-medium text-white sm:text-[20px] text-[16px]">Khám phá ngay</button>
                     </div>
                 </div>
                 <div className="relative">
@@ -113,25 +136,25 @@ const Homepage = () => {
                     <img src={Image10} alt="image" className="absolute sm:top-[360px] top-[200px] right-5 w-[150px] h-[200px] sm:right-10 sm:w-[350px] sm:h-[350px]" />
                     <img src={Image11} alt="image" className="absolute sm:top-[260px] sm:right-[369px] sm:w-[350px] sm:h-[400px] top-[180px] right-[150px] w-[150px] h-[200px]" />
                 </div>
-                <div className="mt-32 flex flex-col justify-center items-center w-full">
-                    <img src={Logo1} alt="profile_image" className="w-40 h-40 rounded-full" />
-                    <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
+                <div className="res-logo mt-32 flex flex-col justify-center items-center w-full">
+                    <img src={Logo1} alt="profile_image" className=" w-40 h-40 rounded-full" />
+                    <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10 res-text-three">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
                     <p className="sm:text-[12px] sm:w-[520px] text-[9px] px-8 sm:px-2">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
                 </div>
                 <div className="mt-8 sm:px-[220px] px-[20px] flex justify-evenly">
-                <div className="flex flex-col items-center sm:text-[16px] text-[10px]">
-                    <img src={Tele} alt="logo contact" className="sm:w-[40px] w-[20px] sm:h-[40px] h-[20px]" />
-                    <a href="https://www.facebook.com/profile.php?id=61564523907773" target="_blank" className="">Chăm sóc khách hàng</a>
+                    <div className="flex flex-col items-center sm:text-[16px] text-[10px]">
+                        <img src={Tele} alt="logo contact" className="sm:w-[40px] w-[20px] sm:h-[40px] h-[20px]" />
+                        <a href="https://www.facebook.com/profile.php?id=61564523907773" target="_blank" className="">Chăm sóc khách hàng</a>
+                    </div>
+                    <div className="flex flex-col items-center sm:ml-[10px] sm:text-[16px] text-[10px]">
+                        <img src={Phone} alt="logo phone" className="sm:w-[40px]  w-[20px] sm:h-[40px] h-[20px]" />
+                        <p>(+84) 832.123.231</p>
+                    </div>
+                    <div className="flex flex-col items-center sm:text-[16px] text-[10px]">
+                        <img src={Email} alt="logo email" className="sm:w-[40px]  w-[20px] sm:h-[40px] h-[20px]" />
+                        <p>vnomas.contact@gmail.com</p>
+                    </div>
                 </div>
-                <div className="flex flex-col items-center sm:ml-[10px] sm:text-[16px] text-[10px]">
-                    <img src={Phone} alt="logo phone" className="sm:w-[40px]  w-[20px] sm:h-[40px] h-[20px]" />
-                    <p>(+84) 832.123.231</p>
-                </div>
-                <div className="flex flex-col items-center sm:text-[16px] text-[10px]">
-                    <img src={Email} alt="logo email" className="sm:w-[40px]  w-[20px] sm:h-[40px] h-[20px]" />
-                    <p>vnomas.contact@gmail.com</p>
-                </div>
-            </div>
                 <div className="mt-4 flex justify-center items-center">
                     <button className="sm:px-8 py-2 px-6 rounded-[20px] bg-[#742B0C]/50 mt-2 font-medium text-white" onClick={openPopup}>Trò chuyện ngay!</button>
                 </div>

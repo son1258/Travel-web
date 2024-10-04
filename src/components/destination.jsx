@@ -20,6 +20,7 @@ import Phone from '../assets/images/telephone-call_3059561.png';
 import Profile from '../assets/images/profile.jpg';
 import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
+import './app.css';
 
 function Destination() {
     const navigate = useNavigate();
@@ -76,11 +77,11 @@ function Destination() {
                     <p className='py-2'>Miền Tây(coming soon)</p>
                     <div className='w-full h-[1px] bg-black/50'></div>
 
-                    <div className='sm:mt-5 mt-4 w-full relative'>
+                    <div className='sm:mt-5 mt-4 w-full relative app-div'>
                         <img src={DES3} alt='eximage' className="w-full" />
-                        <p className='absolute sm:top-12 top-7 text-[10px] left-4 sm:left-12 font-medium sm:text-[15px] text-white uppercase sm:w-[150px]'>Liên hệ với tư vấn viên của VNomas</p>
-                        <p className='absolute sm:top-24 top-14 text-[8px] left-4 sm:left-12 sm:text-[12px] text-white sm:w-[180px]'>VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách</p>
-                        <button type="button" className="absolute sm:left-12 left-4 bottom-3 text-[10px] rounded-[20px] px-4 py-1 sm:bottom-4 sm:px-5 sm:py-2 sm:rounded-[30px] bg-white font-medium sm:text-[18px]" onClick={openPopup}>Gửi Mail ngay!</button>
+                        <p className='absolute sm:top-12 top-7 text-[10px] left-4 sm:left-12 font-medium sm:text-[15px] text-white uppercase sm:w-[150px] app-text-title'>Liên hệ với tư vấn viên của VNomas</p>
+                        <p className='absolute sm:top-24 top-14 text-[8px] left-4 sm:left-12 sm:text-[12px] text-white sm:w-[180px] app-text-p'>VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách</p>
+                        <button type="button" className="app-button absolute sm:left-12 left-4 bottom-3 text-[10px] rounded-[20px] px-4 py-1 sm:bottom-4 sm:px-5 sm:py-2 sm:rounded-[30px] bg-white font-medium sm:text-[18px]" onClick={openPopup}>Gửi Mail ngay!</button>
                     </div>
                 </div>
 
@@ -173,9 +174,9 @@ function Destination() {
                 </div>
             )}
 
-            <div className="mt-32 flex flex-col justify-center items-center w-full">
+            <div className="res-logo mt-32 flex flex-col justify-center items-center w-full">
                 <img src={Logo1} alt="profile_image" className="w-40 h-40 rounded-full" />
-                <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
+                <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10 res-text-three">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
                 <p className="sm:text-[12px] sm:w-[520px] text-[9px] px-8 sm:px-2">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
             <div className="mt-8 sm:px-[220px] px-[20px] flex justify-evenly">

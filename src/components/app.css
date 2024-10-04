@@ -1,0 +1,27 @@
+@media (max-width: 480px){
+    .res-logo{
+        margin-top: 30px;
+    }
+    .res-text-three{
+        font-size: 8px;
+    }
+    .app-text-title{
+        font-size: 8px;
+    }
+    .app-text-p{
+        font-size: 6px;
+    }
+    .app-button{
+        font-size: 8px;
+        padding: 3px 6px;
+    }
+    .app-div{
+        margin-top: 4px;
+    }
+    .app-text-medium{
+        font-size: 16px;
+    }
+    .app-text-base{
+        font-size: 12px;
+    }
+}

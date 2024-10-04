@@ -22,6 +22,7 @@ import Profile from '../assets/images/profile.jpg';
 import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
 import { useState } from "react";
+import './experience.css';
 
 function Experience() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -49,18 +50,18 @@ function Experience() {
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="flex justify-evenly items-center sm:px-[100px] sm:py-[100px] py-[30px] text-white font-medium sm:text-[20px] xl:text-[30px]">
+                <div className="res-nav flex justify-evenly items-center sm:px-[100px] sm:py-[100px] py-[30px] text-white font-medium sm:text-[20px] xl:text-[30px]">
                     <p onClick={() => navigate('/destination')} className='cursor-pointer'>ĐIỂM ĐẾN</p>
                     <p onClick={() => navigate('/experience')} className='cursor-pointer'>TRẢI NGHIỆM</p>
                     <p onClick={() => navigate('/about')} className='cursor-pointer'>VỀ CHÚNG TÔI</p>
                     <p onClick={openPopup} className='cursor-pointer'>LIÊN HỆ</p>
                 </div>
-                <div className="text-center font-medium text-[20px] sm:text-[28px] xl:text-[36px] text-white mt-2">
+                <div className="res-text text-center font-medium text-[20px] sm:text-[28px] xl:text-[36px] text-white mt-2">
                     <p>Cao Bằng - Bắc Kạn</p>
                     <p>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
                 </div>
-                <div className="flex justify-center items-center sm:mt-8 mt-4 pb-[40px] sm:pb-[100px]">
-                    <button type="button" className="px-6 py-2 rounded-[30px] bg-white font-medium text-[20px] xl:text-[36px] xl:rounded-[40px] text-[#742B0C]" onClick={() => navigate('/experience2')}>Khám phá trải nghiệm</button>
+                <div className="flex justify-center items-center sm:mt-8 mt-4 pb-[40px] sm:pb-[100px] res-pb">
+                    <button type="button" className="res-text-bt px-6 py-2 rounded-[30px] bg-white font-medium text-[20px] xl:text-[36px] xl:rounded-[40px] text-[#742B0C]" onClick={() => navigate('/experience2')}>Khám phá trải nghiệm</button>
                 </div>
             </div>
             <div className="mt-12 grid sm:grid-cols-4 grid-cols-2 xl:gap-8 gap-2 px-2">
@@ -77,31 +78,52 @@ function Experience() {
                 <p className="font-medium text-[40px] xl:text-[50px]">Cao Bằng - Bắc Kạn</p>
                 <p className="w-2/3 mt-2 xl:text-[28px] text-center">Chuyến đi như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng. </p>
             </div>
-            <div className="mt-10 inline-flex gap-4 ml-10 sm:gap-8 sm:ml-20 xl:px-20">
+            {/* <div className="hidden md:flex mt-10 inline-flex gap-4 ml-10 sm:gap-8 sm:ml-20 xl:px-20">
                 <div className="w-1/2 relative">
                     <input className="px-2 py-2 sm:w-[500px] xl:w-[700px] border-[1px] border-[black]/50 rounded-lg" placeholder="Tìm tour" />
-                    <img src={SearchIcon} alt="search" className="w-6 h-5 absolute top-[10px]  sm:right-4 md:right-2" />
+                    <img src={SearchIcon} alt="search" className="w-6 h-5 absolute top-[10px]  sm:right-12 md:right-10" />
                 </div>
                 <div className="w-full sm:w-1/2 sm:ml-20 xl:w-full xl:ml-32 inline-flex sm:gap-16">
                     <div className="w-1/2 relative xl:w-full w-full">
                         <input className="px-2 py-2 border-[1px] border-[black]/50 rounded-lg xl:w-[300px]" placeholder="Từ ngày" />
-                        <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-4" />
+                        <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-12" />
                     </div>
                     <div className="w-1/2 relative w-full">
                         <input className="px-2 py-2 border-[1px] border-[black]/50 rounded-lg xl:w-[300px]" placeholder="Đến ngày" />
+                        <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-12" />
+                    </div>
+                </div>
+            </div> */}
+            <div className="hidden md:flex mt-10 gap-4 sm:gap-8 xl:px-20 px-10">
+                {/* Search Input */}
+                <div className="w-1/2 relative">
+                    <input className="px-2 py-2 w-full border-[1px] border-[black]/50 rounded-lg" placeholder="Tìm tour" />
+                    <img src={SearchIcon} alt="search" className="w-6 h-5 absolute top-[10px] sm:right-6 md:right-4" />
+                </div>
+
+                {/* Date Inputs */}
+                <div className="w-full sm:w-1/2 sm:ml-20 xl:w-full xl:ml-32 inline-flex sm:gap-16">
+                    <div className="w-full relative">
+                        <input className="px-2 py-2 w-full border-[1px] border-[black]/50 rounded-lg" placeholder="Từ ngày" />
+                        <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-4" />
+                    </div>
+                    <div className="w-full relative">
+                        <input className="px-2 py-2 w-full border-[1px] border-[black]/50 rounded-lg" placeholder="Đến ngày" />
                         <img src={CalendarIcon} alt="Calendar" className="w-6 h-5 absolute top-[10px] right-4" />
                     </div>
                 </div>
             </div>
-            <div className="mt-12 grid grid-cols-3 gap-2 md:px-32">
+
+
+            <div className="mt-12 grid sm:grid-cols-3 grid-cols-1 px-2 gap-2 md:px-32">
                 <img src={S1} alt="eximage" className="h-[350px] w-full" />
                 <img src={S2} alt="eximage" className="h-[350px] w-full" />
                 <img src={S3} alt="eximage" className="h-[350px] w-full" />
             </div>
-            <div className="mt-16 flex flex-col justify-center items-center w-full">
+            <div className="res-logo mt-16 flex flex-col justify-center items-center w-full">
                 <img src={Logo1} alt="profile_image" className="w-40 h-40 rounded-full" />
-                <p className="font-medium text-2xl tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
-                <p className="text-[12px] w-[520px]">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
+                <p className="font-medium text-2xl tracking-[6px] leading-10 res-text-three">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
+                <p className="sm:text-[12px] sm:w-[520px] text-[9px] px-8 sm:px-2">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
             <div className="mt-8 sm:px-[220px] px-[20px] flex justify-evenly">
                 <div className="flex flex-col items-center sm:text-[16px] text-[10px]">

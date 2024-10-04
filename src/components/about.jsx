@@ -23,6 +23,7 @@ import Profile from '../assets/images/profile.jpg';
 import FbIcon from '../assets/icons/facebook.svg';
 import Insta from '../assets/icons/FormkitInstagram.svg';
 import { useState } from 'react';
+import './app.css';
 
 function AboutUs() {
     const navigate = useNavigate();
@@ -42,7 +43,7 @@ function AboutUs() {
             <div className="hidden sm:block fixed top-0 right-0 w-[40px] h-[40px] sm:w-12 sm:h-12 z-[1000]" onClick={() => navigate('/menu')}>
                 <img src={Menu} alt='logo-menu' />
             </div>
-            <div className="flex justify-evenly items-center sm:px-[10px] text-[8px] px-2 py-4 text-black sm:border-[1px] sm:shadow font-medium sm:text-[16px] xl:text-[24px] sm:py-[30px]">
+            <div className="app-text-p px-1 flex justify-evenly items-center sm:px-[10px] text-[8px] py-4 text-black sm:border-[1px] sm:shadow font-medium sm:text-[16px] xl:text-[24px] sm:py-[30px]">
                 <p>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
                 <p>GIÁ TRỊ CHÚNG TÔI</p>
                 <p>LỢI ÍCH DÀNH CHO KHÁCH HÀNG</p>
@@ -53,7 +54,7 @@ function AboutUs() {
                     <img src={OurStore} alt="our_store" className='object-cover mt-8' />
                 </div>
                 <div className='w-full sm:mx-6 mx-2 sm:text-[12px] text-[8px] mt-2 sm:mt-20 xl:mt-24'>
-                    <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px]'>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
+                    <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px] app-text-medium'>CÂU CHUYỆN CỦA CHÚNG TÔI</p>
                     <p className='italic sm:text-[18px] text-[14px] sm:tracking-[6px] text-[#3399ff] xl:text-[30px] xl:mt-2'>VNOMAS, "VIỆT NAM" VÀ "NOMAD"</p>
                     <p className='w-[90%] mt-1 xl:text-[16px] xl:mt-3'>VNOMAS Travel ra đời với sứ mệnh khám phá và giới thiệu vẻ đẹp tiềm ẩn của Việt Nam đến với du khách khắp nơi. Cái tên VNOMAS là sự kết hợp hài hòa giữa "Việt Nam" và "Nomad" (người du mục), thể hiện tinh thần khám phá, tự do và sự kết nối sâu sắc với văn hóa địa phương.</p>
                     <p className='w-[90%] mt-1 xl:text-[16px] xl:mt-3'><span className='italic font-medium'>Slogan "Đắm say văn hóa, khám phá Việt Nam"</span> như một lời mời gọi du khách bước vào một cuốn tiểu thuyết đầy màu sắc. Mỗi trang sách là một trải nghiệm mới lạ, mỗi chương là một câu chuyện về văn hóa, bản sắc và con người Việt Nam. Từ "đắm say" gợi lên hình ảnh một du khách đang thả mình vào một dòng sông văn hóa sâu lắng, nơi họ được hòa mình trọn vẹn vào cuộc sống thường ngày của người dân địa phương. Còn "khám phá Việt Nam" như một tấm bản đồ kho báu, hấp dẫn du khách khám phá những điều kỳ diệu ẩn giấu trong từng ngóc ngách của đất nước</p>
@@ -62,7 +63,7 @@ function AboutUs() {
             </div>
             <div className='grid grid-cols-2 sm:gap-3 gap-2 mt-2 sm:mt-[180px] xl:mt-[200px]'>
                 <div className='w-full sm:mx-8 mx-2 sm:text-[12px] text-[8px] sm:mt-[100px] mt-2 xl:mt-[200px]'>
-                    <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px]'>GIÁ TRỊ CỦA CHÚNG TÔI</p>
+                    <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px]  app-text-medium'>GIÁ TRỊ CỦA CHÚNG TÔI</p>
                     <ul className='list-disc pl-8 mt-2 xl:mt-4 xl:text-[20px] sm:text-[12px] text-[8px] px-4'>
                         <li><span className='italic font-medium xl:text-[24px] xl:mt-3 sm:text-[16px] text-[12px]'>Authenticity : </span>Chúng tôi cam kết mang đến những trải nghiệm du lịch chân thực, giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
                         <li><span className='italic font-medium xl:text-[24px] xl:mt-3 sm:text-[16px] text-[12px]'>Passion : </span>Chúng tôi đam mê khám phá và chia sẻ vẻ đẹp của Việt Nam với thế giới.</li>
@@ -81,7 +82,7 @@ function AboutUs() {
             <div className='grid grid-cols-2 sm:gap-3 mt-4 px-2'>
                 <img src={OurBenefit} alt="our_store" className='w-full h-[400px] sm:h-full mt-4' />
                 <div className='w-full sm:mx-8 mx-4  sm:text-[13px] sm:mt-[100px] mt-1 text-[8px] xl:mt-[200px]'>
-                    <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px]'>LỢI ÍCH DÀNH CHO KHÁCH HÀNG</p>
+                    <p className='font-medium text-[18px] sm:text-[30px] xl:text-[48px]  app-text-medium'>LỢI ÍCH DÀNH CHO KHÁCH HÀNG</p>
                     <ul className='list-disc sm:pl-8 pl-4 sm:mt-2 sm:text-[12px] text-[8px] xl:text-[20px] px-4'>
                         <li><span className='italic font-medium xl:text-[24px] xl:mt-3 sm:text-[16px] text-[12px]'>Trải nghiệm văn hóa độc đáo:</span> Khám phá những lễ hội truyền thống, làng nghề thủ công, và ẩm thực địa phương.giúp du khách khám phá Việt Nam một cách sâu sắc nhất.</li>
                         <li><span className='italic font-medium xl:text-[24px] xl:mt-3 sm:text-[16px] text-[12px]'>Hành trình khám phá tự do:</span> Tự thiết kế hành trình theo sở thích cá nhân, hoặc chọn những tour du lịch được thiết kế riêng bởi các chuyên gia của chúng tôi.</li>
@@ -95,48 +96,48 @@ function AboutUs() {
                 </div>
             </div>
             <div>
-                <p className='text-center py-12 sm:text-[40px] text-[28px] font-medium'>HÀNH TRÌNH CHÚNG TÔI MANG ĐẾN</p>
-                <div className='flex justify-between py-4 px-8 gap-2'>
+                <p className='text-center mt-8 py-3 sm:py-12 sm:text-[40px] text-[28px] font-medium app-text-medium'>HÀNH TRÌNH CHÚNG TÔI MANG ĐẾN</p>
+                <div className='flex justify-between sm:py-4 sm:px-8 gap-2'>
                     <div className='flex flex-col items-center sm:text-[25px] text-[16px]'>
                         <img src={CT1} alt='logo ct' />
-                        <p className='mt-2 font-medium pb-1'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
+                        <p className='mt-2 font-medium pb-1 app-text-base'>HƠI THỞ NÚI RỪNG - TINH HOA MIỀN SƠN CƯỚC</p>
                         <p className='sm:text-[20px] px-20 text-[12px]'>Chuyến đi của chúng ta như một hành trình khám phá linh hồn của núi rừng, nơi những câu chuyện dân gian hòa quyện với cuộc sống hiện tại. Chúng ta sẽ cùng nhau tìm hiểu về văn hóa, phong tục tập quán của người Tày - Nùng, khám phá những bí ẩn của thiên nhiên và tận hưởng vẻ đẹp hoang sơ của núi rừng.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <p className='text-center py-12 sm:text-[40px] text-[28px] font-medium'>DỊCH VỤ CHÚNG TÔI CUNG CẤP</p>
+                <p className='text-center py-12 sm:text-[40px] text-[28px] font-medium app-text-medium'>DỊCH VỤ CHÚNG TÔI CUNG CẤP</p>
                 <div className='flex justify-between sm:px-24 sm:gap-8 px-10 gap-2'>
                     <div className='flex flex-col items-center text-[12px]'>
                         <img src={B1} alt='logo ct' className='sm:w-28 sm:h-28 w-16 h-16' />
-                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1'>TƯ VẤN & ĐẶT LỊCH</p>
+                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1 app-text-base'>TƯ VẤN & ĐẶT LỊCH</p>
                         <p>Chúng tôi giúp bạn hiểu rõ về các sản phẩm được cung cấp từ nguồn cung ứng được chọn lọc kỹ càng. Chúng tôi đặt chỗ lưu trú và lên lịch cho các tour du lịch nhóm, cũng như các dịch vụ vận chuyển và hậu cần liên quan, nếu cần thiết.</p>
                     </div>
                     <div className='flex flex-col items-center text-[12px]'>
                         <img src={B2} alt='logo ct' className='sm:w-28 sm:h-28 w-16 h-16' />
-                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1'>HÀNH TRÌNH VNOMAS</p>
+                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1 app-text-base'>HÀNH TRÌNH VNOMAS</p>
                         <p>Chúng tôi thiết kế những hành trình như một tác phẩm nghệ thuật, kết hợp hoàn hảo giữa những điểm đến độc đáo, phương tiện di chuyển tiện nghi và những trải nghiệm khó quên. Bạn chỉ cần tận hưởng, mọi thứ còn lại đã có chúng tôi lo.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <p className='text-center py-12 sm:text-[40px] text-[28px] font-medium'>YÊN TÂM VỀ CHI PHÍ</p>
+                <p className='text-center py-12 sm:text-[40px] text-[28px] font-medium app-text-medium'>YÊN TÂM VỀ CHI PHÍ</p>
                 <div className='flex justify-between sm:px-24 sm:gap-8 px-10 gap-2'>
                     <div className='flex flex-col items-center text-[12px] w-1/2'>
                         <img src={Cost} alt='logo ct' className='sm:w-28 sm:h-28 w-16 h-16' />
-                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1'>KHÔNG BAO GIỜ MẤT TIỀN ĐẶT CỌC CỦA BẠN</p>
+                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1 app-text-base'>KHÔNG BAO GIỜ MẤT TIỀN ĐẶT CỌC CỦA BẠN</p>
                         <p> Chúng tôi hiểu rằng những kế hoạch có thể thay đổi bất ngờ. Vì vậy, nếu bạn cần hủy chuyến, số tiền bạn đã đặt có thể giữ lại để khám phá những hành trình mới cùng Vnomas.</p>
                     </div>
                     <div className='flex flex-col items-center text-[12px] w-1/2'>
                         <img src={Cost2} alt='logo ct' className='sm:w-28 sm:h-28 w-16 h-16' />
-                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1'>MINH BẠCH GIÁ CẢ</p>
+                        <p className='mt-2 sm:text-[24px] text-[16px] font-medium pb-1 app-text-base'>MINH BẠCH GIÁ CẢ</p>
                         <p>Khác biệt với các dịch vụ du lịch truyền thống, chúng tôi tin rằng sự minh bạch là chìa khóa để xây dựng mối quan hệ lâu dài với khách hàng. Bảng phân tích chi phí chi tiết của chúng tôi sẽ giúp bạn so sánh và đưa ra lựa chọn tốt nhất.</p>
                     </div>
                 </div>
             </div>
-            <div className="mt-16 xl:mt-24 flex flex-col justify-center items-center w-full">
+            <div className="res-logo mt-16 xl:mt-24 flex flex-col justify-center items-center w-full">
                 <img src={Logo1} alt="profile_image" className="w-40 h-40 rounded-full" />
-                <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
+                <p className="font-medium sm:text-2xl text-[12px] tracking-[6px] leading-10 res-text-three">LIÊN HỆ VỚI TƯ VẤN VIÊN CỦA VNOMAS</p>
                 <p className="sm:text-[12px] sm:w-[520px] text-[9px] px-8 sm:px-2">Đội ngũ Tư vấn viên của VNomas luôn sẵn sàng phản hồi và giải đáp các thắc mắc của quý khách 24/7 thông qua các kênh Mạng xã hội (Facebook, Instagram), số Hotline và Email của công ty.</p>
             </div>
             <div className="mt-8 sm:px-[220px] px-[20px] flex justify-evenly">

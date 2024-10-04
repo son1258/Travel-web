@@ -44,7 +44,7 @@ function Destination() {
             <div className='flex justify-center items-center w-full mt-2'>
                 <div className='flex flex-row items-center sm:py-6 sm:px-8 px-4 py-2 sm:text-[24px] font-medium shadow justify-between sm:gap-72 xl:gap-80 gap-20'>
                     <p className='text-left lg:text-[28px] sm:text-[20px] text-[12px]'>Miền bạn muốn đến</p>
-                    <div className='flex flex-row sm:gap-10 lg:gap-20 lg:text-[24px] sm:text-[20px] text-[12px] gap-4'>
+                    <div className='flex flex-row sm:gap-10 lg:gap-20 lg:text-[24px] sm:text-[20px] text-[12px] gap-4 app-text-title'>
                         <p className=''>Tất cả</p>
                         <p className=''>Miền Nam</p>
                         <p className=''>Miền Bắc</p>

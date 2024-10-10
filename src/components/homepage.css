@@ -34,4 +34,14 @@
     .res-text-three{
         font-size: 8px;
     }
+    .res-chat{
+        width: 80vw;
+    }
+    .res-gap{
+        gap: 20px;
+    }
+    .res-text-chat{
+        font-size: 16px;
+        padding-top: 20px;
+    }
 }

@@ -160,8 +160,8 @@ const Homepage = () => {
                 </div>
             </div>
             {isPopupVisible && (
-                <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
-                    <div className="bg-white rounded-lg shadow-lg w-[800px] p-6 relative">
+                <div className=" fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
+                    <div className="res-chat bg-white rounded-lg shadow-lg w-[800px] p-6 relative">
                         <button
                             type="button"
                             className="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-gray-900"
@@ -169,12 +169,12 @@ const Homepage = () => {
                         >
                             &times;
                         </button>
-                        <div className='inline-flex gap-44'>
+                        <div className='inline-flex gap-44 res-gap'>
                             <img src={Logo1} className='w-24 h-24' />
-                            <h2 className="text-[30px] font-bold mb-4 text-center mt-2">Trò chuyện nào!!</h2>
+                            <h2 className="text-[30px] font-bold mb-4 text-center mt-2 res-text-chat">Trò chuyện nào!!</h2>
                         </div>
-                        <form className='px-8'>
-                            <div className="mb-4 flex flex-row items-center gap-2">
+                        <form className='sm:px-8'>
+                            <div className="hidden sm:flex mb-4 flex flex-row items-center gap-2">
                                 <input
                                     type="text"
                                     id="firstname"
@@ -184,6 +184,26 @@ const Homepage = () => {
 
                                 />
                                 <input
+                                    type="text"
+                                    id="lastname"
+                                    name="lastname"
+                                    placeholder="Nhập tên"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <input
+                                    type="text"
+                                    id="firstname"
+                                    name="firstname"
+                                    placeholder="Nhập họ và tên đệm"
+                                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+
+                                />
+                            </div>
+                            <div className="mb-4">
+                            <input
                                     type="text"
                                     id="lastname"
                                     name="lastname"

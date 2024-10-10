@@ -92,7 +92,7 @@
     }
     .res-month{
         display: grid;
-        grid-template-columns: repeat(4,0.25fr);
+        grid-template-columns: repeat(3,0.5fr);
     }
     .res-logo{
         margin-top: 30px;
